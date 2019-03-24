@@ -1,0 +1,17 @@
+ttf-anka-coder
+ttf-ubuntu-font-family
+ttf-croscore
+ttf-carlito
+ttf-caladea
+ttf-inconsolata
+ttf-anonymous-pro
+ttf-fira-code
+ttf-hack
+ttf-opensans
+ttf-roboto
+ttf-dejavu
+ttf-ibm-plex
+ttf-lato
+ttf-fira-sans
+otf-overpass
+otf-fantasque-sans-mono

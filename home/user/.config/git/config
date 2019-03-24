@@ -1,0 +1,52 @@
+[user]
+    name = Kyle Rooker
+    email = rookerka@gmail.com
+    username = zaayer
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+    ui = true
+    pager = true
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = red
+[merge]
+    tool = nvimdiff
+[mergetool]
+    prompt = true
+[mergetool "nvimdiff"]
+    cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+[diff]
+    tool = nvimdiff
+[difftool]
+    prompt = false
+[core]
+    editor = nvim
+    excludesfile = ~/.config/git/ignore
+    filemode = false
+[alias]
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    dt = difftool
+    st = status
+    ca = !sh -c 'git add -A && git commit -m \"$1\"' -
+    pa = "!git push; git push bitbucket; git push gitlab"
+[push]
+    default = current
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true

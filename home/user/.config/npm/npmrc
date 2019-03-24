@@ -1,0 +1,9 @@
+;;;;
+; npm userconfig file
+; this is a simple ini-formatted file
+; lines that start with semi-colons are comments.
+; read `npm help config` for help on the various options
+;;;;
+
+init-author-name=Kyle Rooker
+init-version=0.0.1

@@ -1,0 +1,14 @@
+fish
+ripgrep
+fd
+fzf
+lesspipe
+git
+pygmentize
+rsync
+wget
+openssh
+ufw
+dash
+go
+tmux
