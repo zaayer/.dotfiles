@@ -31,12 +31,12 @@ if dein#load_state('/home/zaayer/.local/share/dein')
     "call dein#add('junegunn/seoul256.vim')
     "call dein#add('arcticicestudio/nord-vim')
     "call dein#add('mhartington/oceanic-next')
-    "call dein#add('joshdick/onedark.vim')
+    call dein#add('joshdick/onedark.vim')
     "call dein#add('chriskempson/base16-vim')
     "call dein#add('phanviet/vim-monokai-pro')
     "call dein#add('drewtempelmeyer/palenight.vim')
-    "call dein#add('KeitaNakamura/neodark.vim')
-    call dein#add('tyrannicaltoucan/vim-quantum')
+    call dein#add('KeitaNakamura/neodark.vim')
+    "call dein#add('tyrannicaltoucan/vim-quantum')
 
     " Minimal status line
     call dein#add('itchyny/lightline.vim')
@@ -141,10 +141,10 @@ set background=dark
 "let g:lightline.colorscheme = 'oceanicnext'
 
 " ONE DARK
-"let g:onedark_terminal_italics = 1
-"let g:onedark_hide_endofbuffer = 1
-"colorscheme onedark
-"let g:lightline.colorscheme = 'onedark'
+let g:onedark_terminal_italics = 1
+let g:onedark_hide_endofbuffer = 1
+colorscheme onedark
+let g:lightline.colorscheme = 'onedark'
 
 " MATERIAL PALE NIGHT
 "let g:palenight_terminal_italics = 1
@@ -160,10 +160,10 @@ set background=dark
 "let g:lightline.colorscheme = 'neodark'
 
 " QUANTUM
-let g:quantum_black = 1 "0 for standard quantum
-let g:quantum_italics = 1
-colorscheme quantum
-let g:lightline.colorscheme = 'quantum'
+"let g:quantum_black = 1 "0 for standard quantum
+"let g:quantum_italics = 1
+"colorscheme quantum
+"let g:lightline.colorscheme = 'quantum'
 
 " BASE 16 VIM
 " Enable italic comments in base16 themes
