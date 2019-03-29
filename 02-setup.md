@@ -70,6 +70,9 @@ Updates to boot entries
 
 ## Setup NetworkManager
 
+Install packages
+`yay -S networkmanager dhclient iwd dnsmasq`
+
 Various systemctl changes
 `sudo systemctl enable NetworkManager --now`
 `sudo systemctl stop dhcpcd`

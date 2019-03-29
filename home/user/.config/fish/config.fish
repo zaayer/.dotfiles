@@ -31,8 +31,8 @@ set -gx GEM_SPEC_CACHE $XDG_CACHE_HOME/gem
 set -gx GEMRC $XDG_CONFIG_HOME/gem/gemrc
 set -gx _JAVA_OPTIONS Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 set -gx WGETRC $XDG_CONFIG_HOME/wget/wgetrc
-set -gx XAUTHORITY $XDG_RUNTIME_DIR/Xauthority
-set -gx GTK2_RC_FILES $XDG_CONFIG_HOME/gtk-2.0/gtkrc
+# set -gx XAUTHORITY $XDG_RUNTIME_DIR/Xauthority
+# set -gx GTK2_RC_FILES $XDG_CONFIG_HOME/gtk-2.0/gtkrc
 # set -gx RBENV_ROOT $XDG_DATA_HOME/rbenv
 # set -gx STACK_ROOT $XDG_DATA_HOME/stack
 

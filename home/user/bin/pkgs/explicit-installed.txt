@@ -1,0 +1,201 @@
+   0.00 MiB	pygmentize                              	Python syntax highlighter
+   0.01 MiB	alacritty-terminfo                      	Terminfo files for the alacritty terminal emulator
+   0.01 MiB	lostfiles                               	Find orphaned files not owned by any Arch packages
+   0.01 MiB	pulseaudio-alsa                         	ALSA Configuration for PulseAudio
+   0.01 MiB	xorg-xgamma                             	Alter a monitor's gamma correction
+   0.02 MiB	libcanberra-gstreamer                   	GStreamer plugin for libcanberra
+   0.02 MiB	sassc                                   	C implementation of Sass CSS preprocessor.
+   0.02 MiB	xorg-sessreg                            	Register X sessions in system utmp/utmpx databases
+   0.02 MiB	xorg-smproxy                            	Allows X applications that do not support X11R6 session management to participate in an X11R6 session
+   0.03 MiB	deepin-polkit-agent-ext-gnomekeyring    	GNOME keyring extension for dde-polkit-agent
+   0.03 MiB	jp2a                                    	A small utility for converting JPG images to ASCII
+   0.03 MiB	xorg-xcmsdb                             	Device Color Characterization utility for X Color Management System
+   0.04 MiB	efibootmgr                              	Tool to modify UEFI Firmware Boot Manager Variables
+   0.04 MiB	fff                                     	Simple and fast file manager
+   0.04 MiB	msr-tools                               	Utilities to access the processor MSRs and CPU ID directly
+   0.04 MiB	x86_energy_perf_policy                  	Read or write MSR_IA32_ENERGY_PERF_BIAS
+   0.04 MiB	xf86-input-vmmouse                      	X.org VMWare Mouse input driver
+   0.04 MiB	xorg-xdpyinfo                           	Display information utility for X
+   0.04 MiB	xorg-xdriinfo                           	Query configuration information of DRI drivers
+   0.04 MiB	xorg-xkbevd                             	XKB event daemon
+   0.05 MiB	deepin-desktop-base                     	Base component for Deepin
+   0.05 MiB	gvfs-nfs                                	Virtual filesystem implementation for GIO (NFS backend)
+   0.05 MiB	pacgraph                                	Draws a graph of installed packages to PNG/SVG/GUI/console. Good for finding bloat.
+   0.05 MiB	time                                    	Utility for monitoring a program's use of system resources
+   0.05 MiB	xorg-luit                               	Filter that can be run between an arbitrary application and a UTF-8 terminal emulator
+   0.05 MiB	xorg-xauth                              	X.Org authorization settings program
+   0.05 MiB	xorg-xbacklight                         	RandR-based backlight control application
+   0.05 MiB	xorg-xcursorgen                         	Create an X cursor file from PNG images
+   0.05 MiB	xorg-xhost                              	Server access control program for X
+   0.05 MiB	xorg-xinput                             	Small commandline tool to configure devices
+   0.05 MiB	xorg-xkbutils                           	XKB utility demos
+   0.05 MiB	xorg-xkill                              	Kill a client by its X resource
+   0.05 MiB	xorg-xlsatoms                           	List interned atoms defined on server
+   0.05 MiB	xorg-xlsclients                         	List client applications running on a display
+   0.05 MiB	xorg-xrefresh                           	Refresh all or part of an X screen
+   0.05 MiB	xorg-xsetroot                           	Classic X utility to set your root window background to a given pattern or color
+   0.05 MiB	xorg-xvinfo                             	Prints out the capabilities of any video adaptors associated with the display that are accessible through the X-Video extension
+   0.06 MiB	expac                                   	pacman database extraction utility
+   0.06 MiB	xclip                                   	Command line interface to the X11 clipboard
+   0.06 MiB	xorg-setxkbmap                          	Set the keyboard using the X Keyboard Extension
+   0.06 MiB	xorg-xev                                	Print contents of X events
+   0.06 MiB	xorg-xwud                               	X Window System image undumping utility
+   0.07 MiB	deepin-shortcut-viewer                  	Deepin Shortcut Viewer
+   0.07 MiB	libxss                                  	X11 Screen Saver extension library
+   0.07 MiB	scrot                                   	Simple command-line screenshot utility for X
+   0.07 MiB	xf86-video-vesa                         	X.org vesa video driver
+   0.07 MiB	xorg-iceauth                            	ICE authority file utility
+   0.07 MiB	xorg-xrandr                             	Primitive command line interface to RandR extension
+   0.07 MiB	xorg-xrdb                               	X server resource database utility
+   0.07 MiB	xorg-xset                               	User preference utility for X
+   0.07 MiB	xorg-xwd                                	X Window System image dumping utility
+   0.08 MiB	catimg                                  	Print images in a terminal with 256 colors support
+   0.08 MiB	xorg-xinit                              	X.Org initialisation program
+   0.08 MiB	xorg-xmodmap                            	Utility for modifying keymaps and button mappings
+   0.08 MiB	xorg-xprop                              	Property displayer for X
+   0.08 MiB	xorg-xwininfo                           	Command-line utility to print information about windows on an X server
+   0.09 MiB	cabextract                              	A program to extract Microsoft cabinet (.CAB) files
+   0.09 MiB	fbset                                   	Framebuffer setup utility
+   0.09 MiB	gvfs-smb                                	Virtual filesystem implementation for GIO (SMB/CIFS backend; Windows client)
+   0.09 MiB	xorg-xpr                                	Print an X window dump from xwd
+   0.11 MiB	lhasa                                   	Free LZH/LHA archive tool
+   0.11 MiB	tree                                    	A directory listing program displaying a depth indented list of files
+   0.11 MiB	unshield                                	Extracts CAB files from InstallShield installers
+   0.12 MiB	deepin-menu                             	Deepin menu service for building beautiful menus
+   0.12 MiB	ncdu                                    	Disk usage analyzer with an ncurses interface
+   0.14 MiB	libu2f-host                             	Yubico Universal 2nd Factor (U2F) Host C Library
+   0.15 MiB	gvfs-afc                                	Virtual filesystem implementation for GIO (AFC backend; Apple mobile devices)
+   0.15 MiB	pacman-contrib                          	Contributed scripts and tools for pacman systems
+   0.17 MiB	dash                                    	POSIX compliant shell that aims to be as small as possible
+   0.17 MiB	pulseaudio-bluetooth                    	Bluetooth support for PulseAudio
+   0.17 MiB	xdotool                                 	Command-line X11 automation tool
+   0.17 MiB	xorg-server-common                      	Xorg server common files
+   0.18 MiB	deepin-turbo                            	A daemon that helps to launch applications faster
+   0.19 MiB	htop                                    	Interactive process viewer
+   0.20 MiB	ttf-inconsolata                         	Monospace font for pretty code listings and for the terminal
+   0.22 MiB	xf86-video-amdgpu                       	X.org amdgpu video driver
+   0.22 MiB	xf86-video-vmware                       	X.org vmware video driver
+   0.23 MiB	ttf-caladea                             	Google's Caladea font
+   0.24 MiB	deepin-calendar                         	Calendar for Deepin Desktop Environment
+   0.25 MiB	deepin-desktop-schemas                  	GSettings deepin desktop-wide schemas
+   0.25 MiB	xorg-xkbcomp                            	X Keyboard description compiler
+   0.26 MiB	rtmpdump                                	Tool to download rtmp streams
+   0.27 MiB	exfat-utils                             	Utilities for exFAT file system
+   0.27 MiB	lesspipe                                	an input filter for the pager less
+   0.27 MiB	xorg-x11perf                            	Simple X server performance benchmarker
+   0.28 MiB	neofetch                                	A CLI system information tool written in BASH that supports displaying images.
+   0.29 MiB	gtk-engine-murrine                      	GTK2 engine to make your desktop look like a 'murrina', an italian word meaning the art glass works done by Venicians glass blowers.
+   0.30 MiB	unrar                                   	The RAR uncompression program
+   0.31 MiB	python-neovim                           	Python client for Neovim
+   0.32 MiB	chafa                                   	Image-to-text converter supporting a wide range of symbols and palettes, transparency, animations, etc.
+   0.34 MiB	atomicparsley                           	A command line program for reading, parsing and setting iTunes-style metadata in MPEG4 files
+   0.34 MiB	deepin-network-utils                    	DDE network utils
+   0.34 MiB	unzip                                   	For extracting and viewing files in .zip archives
+   0.39 MiB	deepin-qt5dxcb-plugin                   	Qt platform plugins for DDE
+   0.44 MiB	otf-fantasque-sans-mono                 	OTF font family with a great monospaced variant for programmers
+   0.46 MiB	pacutils                                	Helper tools for libalpm
+   0.48 MiB	imagemagick                             	An image viewing/manipulation program
+   0.50 MiB	feh                                     	Fast and light imlib2-based image viewer
+   0.52 MiB	deepin-anything                         	Deepin Anything file search tool
+   0.55 MiB	rsync                                   	A file transfer program to keep remote files in sync
+   0.60 MiB	tmux                                    	A terminal multiplexer
+   0.72 MiB	dnsmasq                                 	Lightweight, easy to configure DNS forwarder and DHCP server
+   0.78 MiB	ufw                                     	Uncomplicated and easy to use CLI tool for managing a netfilter firewall
+   0.79 MiB	cpio                                    	A tool to copy files into or out of a cpio or tar archive
+   0.82 MiB	xorg-docs                               	X.org documentations
+   0.93 MiB	deepin-screensaver                      	Deepin screensaver viewer and tools
+   0.96 MiB	deepin-calculator                       	An easy to use calculator for ordinary users
+   1.04 MiB	ttf-anonymous-pro                       	A family of four fixed-width fonts designed especially with coding in mind
+   1.05 MiB	terminus-font                           	Monospace bitmap font (for X11 and console)
+   1.11 MiB	iwd                                     	Internet Wireless Daemon
+   1.12 MiB	ttf-fira-code                           	Monospaced font with programming ligatures
+   1.16 MiB	deepin-screenshot                       	Easy-to-use screenshot tool for linuxdeepin desktop environment
+   1.17 MiB	deepin-qt5integration                   	Qt platform theme integration plugins for DDE
+   1.17 MiB	gtk-engines                             	Theme engines for GTK+ 2
+   1.21 MiB	ttf-hack                                	A hand groomed and optically balanced typeface based on Bitstream Vera Mono.
+   1.22 MiB	deepin-system-monitor                   	A more user-friendly system monitor
+   1.22 MiB	libcaca                                 	Color AsCii Art library
+   1.25 MiB	xorg-server-devel                       	Development files for the X.Org X server
+   1.40 MiB	xorg-server-xnest                       	A nested X server that runs as an X application
+   1.42 MiB	deepin-account-faces                    	Account faces for Linux Deepin
+   1.53 MiB	deepin-launcher                         	Deepin desktop-environment - Launcher module
+   1.67 MiB	intel-ucode                             	Microcode update files for Intel CPUs
+   1.84 MiB	xorg-server-xvfb                        	Virtual framebuffer X server
+   1.89 MiB	w3m                                     	Text-based Web browser as well as pager
+   1.89 MiB	xorg-server-xdmx                        	Distributed Multihead X Server and utilities
+   2.10 MiB	xorg-server-xwayland                    	run X clients under wayland
+   2.14 MiB	adobe-source-code-pro-fonts             	Monospaced font family for user interface and coding environments
+   2.18 MiB	xorg-server-xephyr                      	A nested X server that runs as an X application
+   2.22 MiB	adobe-source-serif-pro-fonts            	Serif typeface for setting text. Designed to complement Source Sans Pro
+   2.23 MiB	xf86-video-intel                        	X.org Intel i810/i830/i915/945G/G965+ video drivers
+   2.35 MiB	fd                                      	Simple, fast and user-friendly alternative to find
+   2.61 MiB	adobe-source-sans-pro-fonts             	Sans serif font family for user interface environments
+   2.67 MiB	ttf-carlito                             	Googles Carlito font
+   2.70 MiB	otf-overpass                            	An open source font family inspired by Highway Gothic esp. suited for signs, lettering and web sites
+   2.74 MiB	ttf-opensans                            	Sans-serif typeface commissioned by Google
+   2.74 MiB	vulkan-radeon                           	Radeon's Vulkan mesa driver
+   2.79 MiB	dhclient                                	A standalone DHCP client from the dhcp package
+   2.81 MiB	wget                                    	Network utility to retrieve files from the Web
+   3.14 MiB	deepin-dock                             	Deepin desktop-environment - dock module
+   3.33 MiB	fzf                                     	Command-line fuzzy finder
+   3.53 MiB	deepin-gtk-theme                        	Deepin GTK Theme
+   3.62 MiB	xorg-server                             	Xorg X server
+   3.89 MiB	pango                                   	A library for layout and rendering of text
+   3.95 MiB	ttf-ubuntu-font-family                  	Ubuntu font family
+   4.17 MiB	refind-efi                              	Rod Smith's fork of rEFIt UEFI Boot Manager - Built with Tianocore EDK2 libs
+   4.34 MiB	fortune-mod                             	The Fortune Cookie Program from BSD games
+   4.41 MiB	materia-gtk-theme                       	A Material Design theme for GNOME/GTK+ based desktop environments
+   4.41 MiB	veracrypt                               	Disk encryption with strong security based on TrueCrypt
+   4.49 MiB	btrfs-progs                             	Btrfs filesystem utilities
+   4.60 MiB	mpv                                     	a free, open source, and cross-platform media player
+   4.60 MiB	ripgrep                                 	A search tool that combines the usability of ag with the raw speed of grep
+   4.65 MiB	openssh                                 	Premier connectivity tool for remote login with the SSH protocol
+   4.74 MiB	bat                                     	Cat clone with syntax highlighting and git integration
+   4.79 MiB	deepin-sound-theme                      	Deepin sound theme
+   5.18 MiB	ttf-roboto                              	Google's signature family of fonts
+   5.21 MiB	bluez-utils                             	Development and debugging utilities for the bluetooth protocol stack
+   5.41 MiB	deepin-image-viewer                     	Deepin Image Viewer
+   5.43 MiB	librsvg                                 	SVG rendering library
+   5.56 MiB	alacritty                               	A cross-platform, GPU-accelerated terminal emulator
+   5.75 MiB	ttf-croscore                            	Chrome OS core fonts
+   6.11 MiB	libva-mesa-driver                       	VA-API implementation for gallium
+   6.26 MiB	p7zip                                   	Command-line file archiver with high compression ratio
+   6.42 MiB	mesa-vdpau                              	Mesa VDPAU drivers
+   7.44 MiB	noto-fonts-emoji                        	Google Noto emoji fonts
+   8.76 MiB	gucharmap                               	Gnome Unicode Charmap
+   9.26 MiB	awesome                                 	Highly configurable framework window manager
+   9.75 MiB	ttf-dejavu                              	Font family based on the Bitstream Vera Fonts with a wider range of characters
+  10.01 MiB	deepin-session-ui                       	Deepin desktop-environment - Session UI module
+  10.04 MiB	gnome-icon-theme                        	GNOME icon theme
+  10.26 MiB	fish                                    	Smart and user friendly shell intended mostly for interactive use
+  10.42 MiB	openmpi                                 	High performance message passing library (MPI)
+  10.67 MiB	xorg-fonts-75dpi                        	X.org 75dpi fonts
+  11.36 MiB	ttf-lato                                	A sanserif typeface family bearing the Polish name of "Summer"
+  12.27 MiB	xorg-fonts-100dpi                       	X.org 100dpi fonts
+  12.47 MiB	youtube-dl                              	A small command-line program to download videos from YouTube.com and a few more sites
+  12.76 MiB	openjpeg2                               	An open source JPEG 2000 codec, version 2.3.0
+  12.94 MiB	deepin-control-center                   	New control center for linux deepin
+  13.23 MiB	keepassxc                               	Cross-platform community-driven port of Keepass password manager
+  14.29 MiB	networkmanager                          	Network connection manager and user applications
+  15.66 MiB	deepin-file-manager                     	Deepin File Manager
+  15.84 MiB	startdde                                	starter of deepin desktop environment
+  16.51 MiB	sublime-merge                           	Sublime Merge is a most excellent git client
+  19.56 MiB	neovim                                  	Fork of Vim aiming to improve user experience, plugins, and GUIs
+  20.97 MiB	deepin-community-wallpapers             	Community wallpapers for DDE
+  24.95 MiB	python-pycryptodome                     	Collection of cryptographic algorithms and protocols, implemented for use from Python 3.
+  26.24 MiB	qemu                                    	A generic and open source machine emulator and virtualizer
+  27.07 MiB	gcc-fortran                             	Fortran front-end for GCC
+  28.37 MiB	intel-media-driver                      	Intel Media Driver for VAAPI — Broadwell+ iGPUs
+  30.23 MiB	deepin-wallpapers                       	Default wallpapers for DDE
+  33.20 MiB	sublime-text                            	Sublime Text is a sophisticated text editor for code, markup and prose
+  33.86 MiB	mupdf-gl                                	Lightweight PDF and XPS viewer with OpenGL backend
+  37.70 MiB	git                                     	the fast distributed version control system
+  42.80 MiB	libvirt                                 	API for controlling virtualization engines (openvz,kvm,qemu,virtualbox,xen,etc)
+  43.42 MiB	ttf-fira-sans                           	Mozilla's sans-serif typeface designed for Firefox OS
+  46.63 MiB	telegram-desktop                        	Official Telegram Desktop client
+  49.94 MiB	mesa                                    	An open-source implementation of the OpenGL specification
+  95.83 MiB	deepin-api                              	Golang bindings for dde-daemon
+  98.21 MiB	linux-headers                           	Header files and scripts for building modules for Linux kernel
+ 113.32 MiB	deepin-daemon                           	Daemon handling the DDE session settings
+ 170.84 MiB	docker                                  	Pack, ship and run any application as a lightweight container
+ 476.33 MiB	go                                      	Core compiler tools for the Go programming language

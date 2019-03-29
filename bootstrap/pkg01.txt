@@ -12,3 +12,4 @@ ufw
 dash
 go
 tmux
+fortune-mod

@@ -18,9 +18,8 @@ xf86-video-intel
 vulkan-radeon
 opencl-amd
 intel-media-driver
-libva-vdpau-driver-chromium
+libva-vdpau-driver
 libxss
-networkmanager
 xclip
 tree
 ncdu
@@ -46,9 +45,6 @@ fortune-mod
 libu2f-host
 neovim
 python-neovim
-dhclient
-iwd
-dnsmasq
 fff
 w3m
 fbset
