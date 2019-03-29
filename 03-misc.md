@@ -13,6 +13,13 @@ Modprobe
 Packages (no pulseaudio-bluetooth if using jack)
 `yay -S pulseaudio-bluetooth bluez-utils`
 
+## Other audio
+
+Packages
+`yay -S jack2-dbus realtime-privileges`
+
+`useradd -G realtime {name}`
+
 ## Other graphical stuff
 
 Sublime

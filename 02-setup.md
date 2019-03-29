@@ -22,8 +22,8 @@ Use dash as the default /bin/sh instead of bash
 Enable trim timer
 `systemctl enable fstrim.timer --now`
 
-Create user and set passwd
-`useradd -m -G wheel,audio,lp -s /usr/bin/fish {name}`
+Create user and set passwd (optionally may need to add to audio group as well)
+`useradd -m -G wheel,lp -s /usr/bin/fish {name}`
 `passwd {name}`
 
 Let user have sudo
