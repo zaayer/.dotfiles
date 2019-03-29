@@ -52,6 +52,10 @@ Browser
 General desktop (work in progress)
 `yay -S xorg-xinit scrot awesome`
 
+Plymouth
+`yay -S plymouth`
+- Add sd-plymouth after systemd in the hooks section of /etc/mkinticpio.conf
+
 ## Packages to potentially add later
 
 `yay -S mpv docker`

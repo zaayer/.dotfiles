@@ -134,7 +134,7 @@ Configure arch.conf
     linux /vmlinuz-linux
     initrd /intel-ucode.img
     initrd /initramfs-linux.img
-    options quiet splash loglevel=3 rd.systemd.show_status=auto rd.udev.log_priority=3 fsck.mode=skip nvme_core.default_ps_max_latency_us=0 add_efi_memmap nowatchdog root=/dev/vg0/lvroot rootfstype=ext4
+    options quiet splash loglevel=3 rd.systemd.show_status=auto rd.udev.log_priority=3 fsck.mode=skip nvme_core.default_ps_max_latency_us=0 vt.global_cursor_default=0 add_efi_memmap nowatchdog root=/dev/vg0/lvroot rootfstype=ext4
 
 ## Final steps
 
