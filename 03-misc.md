@@ -64,7 +64,7 @@ psd
 nano $HOME/.config/psd/psd.conf
 ```
 * USE_OVERLAYFS="yes"
-( BROWSERS="chromium"
+* BROWSERS="chromium"
 
 ```
 sudo visudo /etc/sudoers.d/psd

@@ -42,7 +42,7 @@ Let user have sudo
 ```
 visudo
 ```
-> uncomment %wheel ALL=(ALL) ALL
+* uncomment %wheel ALL=(ALL) ALL
 
 Switch to user
 ```
@@ -92,13 +92,13 @@ Updates to mkinitcpio
 ```
 sudo nano /etc/mkinitcpio.conf
 ```
-> Add to MODULES - (amdgpu intel_agp i915)
+* Add to MODULES - (amdgpu intel_agp i915)
 
 Updates to boot entries
 ```
 sudo nano /boot/loader/entries/arch.conf
 ```
-> Add to options - amdgpu.dc=1
+* Add to options - amdgpu.dc=1
 
 ## Setup network
 
@@ -197,7 +197,7 @@ sudo cp $HOME/.dotfiles/etc/systemd/journald.conf.d/log.conf /etc/systemd/journa
 
 Install dein.sh
 ```
-curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh && \
+curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh * installer.sh && \
 sh ./installer.sh ~/.local/share/dein && \
 rm installer.sh
 ```
@@ -206,15 +206,15 @@ Setup nvim dein etc
 ```
 nvim
 ```
-> :call dein#install()
-> :q
+* :call dein#install()
+* :q
 
 ```
 nvim
 ```
-> :BlackUpgrade
-> :UpdateRemotePlugins
-> :q
+* :BlackUpgrade
+* :UpdateRemotePlugins
+* :q
 
 ## Rebuild and reboot
 

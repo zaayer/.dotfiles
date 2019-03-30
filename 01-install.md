@@ -90,7 +90,7 @@ mount LABEL=EFI /mnt/boot
 Get the latest mirrors
 ```
 MIRRORS=https://www.archlinux.org/mirrorlist/?country=US&protocol=https&ip_version=4&use_mirror_status=on
-curl -s $MIRRORS | sed -e 's/^#Server/Server/' -e '/^#/d' - > /etc/pacman.d/mirrorlist
+curl -s $MIRRORS | sed -e 's/^#Server/Server/' -e '/^#/d' - * /etc/pacman.d/mirrorlist
 ```
 
 Verify mirrorlist looks fine
@@ -105,7 +105,7 @@ pacstrap /mnt base base-devel intel-ucode
 
 Generate the initial fstab
 ```
-genfstab -L /mnt > /mnt/etc/fstab
+genfstab -L /mnt * /mnt/etc/fstab
 ```
 
 Set priority of swap to 1
@@ -124,17 +124,17 @@ Miscellaneous setup items
 ```
 ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 hwclock --systohc
-echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+echo "en_US.UTF-8 UTF-8" ** /etc/locale.gen
 locale-gen
-echo "LANG=en_US.UTF-8" >> /etc/locale.conf
-echo "zarch" > /etc/hostname
+echo "LANG=en_US.UTF-8" ** /etc/locale.conf
+echo "zarch" * /etc/hostname
 ```
 
 Change the default tty font
 ```
 pacman -S terminus-font
 setfont ter-v14n
-echo "FONT=ter-v14n" >> /etc/vconsole.conf
+echo "FONT=ter-v14n" ** /etc/vconsole.conf
 ```
 
 Setup the hosts file
@@ -147,8 +147,8 @@ Configure mkinitcpio
 ```
 nano /etc/mkinitcpio.conf
 ```
-> MODULES=(dm-raid raid0)
-> HOOKS=(base systemd autodetect keyboard sd-vconsole modconf block sd-lvm2 filesystems)
+* MODULES=(dm-raid raid0)
+* HOOKS=(base systemd autodetect keyboard sd-vconsole modconf block sd-lvm2 filesystems)
 ```
 mkinitcpio -p linux
 ```
@@ -179,22 +179,22 @@ Configure loader.conf
 ```
 nano /boot/loader/loader.conf
 ```
-> default arch
-> timeout 5
-> auto-entries 0
-> auto-firmware 0
-> console-mode max
-> editor no
+* default arch
+* timeout 5
+* auto-entries 0
+* auto-firmware 0
+* console-mode max
+* editor no
 
 Configure arch.conf
 ```
 nano /boot/loader/entries/arch.conf
 ```
-> title Arch Linux
-> linux /vmlinuz-linux
-> initrd /intel-ucode.img
-> initrd /initramfs-linux.img
-> options quiet splash loglevel=3 rd.systemd.show_status=auto rd.udev.log_priority=3 fsck.mode=skip nvme_core.default_ps_max_latency_us=0 vt.global_cursor_default=0 add_efi_memmap nowatchdog root=/dev/vg0/lvroot rootfstype=ext4
+* title Arch Linux
+* linux /vmlinuz-linux
+* initrd /intel-ucode.img
+* initrd /initramfs-linux.img
+* options quiet splash loglevel=3 rd.systemd.show_status=auto rd.udev.log_priority=3 fsck.mode=skip nvme_core.default_ps_max_latency_us=0 vt.global_cursor_default=0 add_efi_memmap nowatchdog root=/dev/vg0/lvroot rootfstype=ext4
 
 ## Final steps
 
