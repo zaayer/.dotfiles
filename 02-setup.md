@@ -112,6 +112,9 @@ Start services
 `sudo systemctl enable systemd-resolved --now`
 `sudo systemctl enable iwd --now`
 
+Link the resolv.conf for systemd-resolved
+`sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf`
+
 Setup wireless
 `iwctl`
 `station {device} connect {SSID}`
