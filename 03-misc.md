@@ -57,21 +57,19 @@ Browser
 yay -S chromium-vaapi profile-sync-daemon
 sudo nano /etc/fstab
 ```
-> add to bottom - tmpfs /home/{user}/.cache/chromium tmpfs rw,noatime,size=1G,nr_inodes=5k,noexec,nodev,nosuid,uid={username},gid={group},mode=1700 0 0
+* **add to bottom:**  tmpfs /home/{user}/.cache/chromium tmpfs rw,noatime,size=1G,nr_inodes=5k,noexec,nodev,nosuid,uid={username},gid={group},mode=1700 0 0
 
 ```
 psd
 nano $HOME/.config/psd/psd.conf
 ```
->>>
-USE_OVERLAYFS="yes"
-BROWSERS="chromium"
->>>
+* USE_OVERLAYFS="yes"
+( BROWSERS="chromium"
 
 ```
 sudo visudo /etc/sudoers.d/psd
 ```
-> {username} ALL=(ALL) NOPASSWD: /usr/bin/psd-overlay-helper
+* {username} ALL=(ALL) NOPASSWD: /usr/bin/psd-overlay-helper
 
 ```
 systemctl --user enable psd.service --now
@@ -86,7 +84,7 @@ Plymouth
 ```
 yay -S plymouth
 ```
-> Add sd-plymouth after systemd in the hooks section of /etc/mkinticpio.conf
+* Add sd-plymouth after systemd in the hooks section of /etc/mkinticpio.conf
 
 ## Packages to potentially add later
 
