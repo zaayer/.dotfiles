@@ -11,9 +11,8 @@ ttf-go-sans-git
 ttf-inconsolata
 ttf-fira-code
 ttf-opensans
-ttf-roboto
+ttf-roboto-fontconfig
 ttf-roboto-mono
-ttf-roboto-slab
 ttf-ibm-plex
 ttf-lato
 ttf-fira-sans

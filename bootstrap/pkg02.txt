@@ -48,4 +48,4 @@ python-neovim
 fff
 w3m
 fbset
-freetype2-cleartype
+freetype2

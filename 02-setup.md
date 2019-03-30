@@ -68,7 +68,9 @@ Updates to boot entries
 `sudo nano /boot/loader/entries/arch.conf`
     Add to options - amdgpu.dc=1
 
-## Setup NetworkManager
+## Setup network
+
+## Option 1: NetworkManager
 
 Install packages
 `yay -S networkmanager dhclient iwd dnsmasq`
@@ -79,13 +81,41 @@ Various systemctl changes
 `sudo systemctl disable dhcpcd`
 `sudo systemctl stop wpa_supplicant`
 `sudo systemctl disable wpa_supplicant`
-`sudo systemctl enable iwd --now`
 
 Remove unneeded packages
-`yay -Rs netctl dhcpcd`
+`yay -Rs netctl dhcpcd wpa_supplicant`
 
 Copy over conf files
 `sudo cp $HOME/.dotfiles/etc/NetworkManager/conf.d/* /etc/NetworkManager/conf.d/`
+
+## Option 2: systemd-networkd
+
+Install packages
+`yay -S iwd`
+
+Various systemctl changes
+`sudo systemctl stop dhcpcd`
+`sudo systemctl disable dhcpcd`
+`sudo systemctl stop wpa_supplicant`
+`sudo systemctl disable wpa_supplicant`
+
+Remove unneeded packages
+`yay -Rs netctl dhcpcd wpa_supplicant`
+
+Copy over conf files
+`sudo mkdir -p /etc/systemd/resolved.conf.d`
+`sudo cp $HOME/.dotfiles/etc/systemd/resolved.conf.d/* /etc/systemd/resolved.conf.d/`
+`sudo cp $HOME/.dotfiles/etc/systemd/network/* /etc/systemd/network/`
+
+Start services
+`sudo systemctl enable systemd-networkd --now`
+`sudo systemctl enable systemd-resolved --now`
+`sudo systemctl enable iwd --now`
+
+Setup wireless
+`iwctl`
+`station {device} connect {SSID}`
+`exit`
 
 ## Disable other watchdogs
 

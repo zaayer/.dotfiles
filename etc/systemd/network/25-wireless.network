@@ -1,0 +1,9 @@
+[Match]
+Name=wlp5s0
+
+[Network]
+DHCP=yes
+DNS=192.168.8.100
+
+[DHCP]
+RouteMetric=20
