@@ -32,7 +32,7 @@ if dein#load_state('/home/zaayer/.local/share/dein')
     "call dein#add('arcticicestudio/nord-vim')
     "call dein#add('mhartington/oceanic-next')
     call dein#add('joshdick/onedark.vim')
-    "call dein#add('chriskempson/base16-vim')
+    call dein#add('chriskempson/base16-vim')
     call dein#add('phanviet/vim-monokai-pro')
     "call dein#add('drewtempelmeyer/palenight.vim')
     call dein#add('KeitaNakamura/neodark.vim')
@@ -120,7 +120,7 @@ let g:lightline = {
 
 set background=dark
 
-colorscheme monokai_pro
+"colorscheme monokai_pro
 
 " GRUVBOX
 "let g:gruvbox_italic = 1
@@ -141,10 +141,10 @@ colorscheme monokai_pro
 "let g:lightline.colorscheme = 'oceanicnext'
 
 " ONE DARK
-"let g:onedark_terminal_italics = 1
-"let g:onedark_hide_endofbuffer = 1
-"colorscheme onedark
-"let g:lightline.colorscheme = 'onedark'
+let g:onedark_terminal_italics = 1
+let g:onedark_hide_endofbuffer = 1
+colorscheme onedark
+let g:lightline.colorscheme = 'onedark'
 
 " MATERIAL PALE NIGHT
 "let g:palenight_terminal_italics = 1
@@ -171,12 +171,12 @@ colorscheme monokai_pro
 "  call Base16hi("Comment", g:base16_gui03, "", g:base16_cterm03, "", "italic", "")
 "endfunction
 "let base16colorspace=256
-"colorscheme base16-tomorrow-night-bright
+"colorscheme base16-material-darker
 "augroup on_change_colorschema
 "  autocmd!
 "  autocmd ColorScheme * call s:base16_customize()
 "augroup END
-"let g:lightline.colorscheme = 'Tomorrow_Night_Bright'
+"let g:lightline.colorscheme = 'spacemacs'
 
 " Enable syntax highlighting
 syntax enable

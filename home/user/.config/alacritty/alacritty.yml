@@ -136,43 +136,43 @@ persistent_logging: false
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# # Colors (One Dark)
+# Colors (One Dark)
+colors:
+  # Default colors
+  primary:
+    background: '0x282c34'
+    foreground: '0xabb2bf'
+
+  # Normal colors
+  normal:
+    # NOTE: Use '0x131613' for the `black` color if you'd like to see
+    # black text on the background.
+    black:   '0x131613'
+    red:     '0xe06c75'
+    green:   '0x98c379'
+    yellow:  '0xd19a66'
+    blue:    '0x61afef'
+    magenta: '0xc678dd'
+    cyan:    '0x56b6c2'
+    white:   '0xabb2bf'
+
+  # Bright colors
+  bright:
+    black:   '0x5c6370'
+    red:     '0xe06c75'
+    green:   '0x98c379'
+    yellow:  '0xd19a66'
+    blue:    '0x61afef'
+    magenta: '0xc678dd'
+    cyan:    '0x56b6c2'
+    white:   '0xffffff'
+
+# # Colors (Monokai Pro)
 # colors:
 #   # Default colors
 #   primary:
-#     background: '0x282c34'
-#     foreground: '0xabb2bf'
-
-#   # Normal colors
-#   normal:
-#     # NOTE: Use '0x131613' for the `black` color if you'd like to see
-#     # black text on the background.
-#     black:   '0x131613'
-#     red:     '0xe06c75'
-#     green:   '0x98c379'
-#     yellow:  '0xd19a66'
-#     blue:    '0x61afef'
-#     magenta: '0xc678dd'
-#     cyan:    '0x56b6c2'
-#     white:   '0xabb2bf'
-
-#   # Bright colors
-#   bright:
-#     black:   '0x5c6370'
-#     red:     '0xe06c75'
-#     green:   '0x98c379'
-#     yellow:  '0xd19a66'
-#     blue:    '0x61afef'
-#     magenta: '0xc678dd'
-#     cyan:    '0x56b6c2'
-#     white:   '0xffffff'
-
-# # Colors (Tomorrow Night Bright)
-# colors:
-#   # Default colors
-#   primary:
-#     background: '0x000000'
-#     foreground: '0xeaeaea'
+#     background: '0x2d2a2e'
+#     foreground: '0xfcfcfa'
 
 #     # Bright and dim foreground colors
 #     #
@@ -192,31 +192,31 @@ draw_bold_text_with_bright_colors: true
 
 #   # Normal colors
 #   normal:
-#     black:   '0x000000'
-#     red:     '0xd54e53'
-#     green:   '0xb9ca4a'
-#     yellow:  '0xe6c547'
-#     blue:    '0x7aa6da'
-#     magenta: '0xc397d8'
-#     cyan:    '0x70c0ba'
-#     white:   '0xeaeaea'
+#     black:   '0x605d61' # 2d2a2e is original - i'm going to lighten it 20%
+#     red:     '0xff6188'
+#     green:   '0xa9dc76'
+#     yellow:  '0xffd866'
+#     blue:    '0x4fb2e3' # blue complement of monokai pro orange fc9867 - 10% darker
+#     magenta: '0xab9df2'
+#     cyan:    '0x78dce8'
+#     white:   '0xfcfcfa'
 
 #   # Bright colors
 #   bright:
-#     black:   '0x666666'
-#     red:     '0xff3334'
-#     green:   '0x9ec400'
-#     yellow:  '0xe7c547'
-#     blue:    '0x7aa6da'
-#     magenta: '0xb77ee0'
-#     cyan:    '0x54ced6'
-#     white:   '0xffffff'
+#     black:   '0x605d61'
+#     red:     '0xff6188'
+#     green:   '0xa9dc76'
+#     yellow:  '0xffd866'
+#     blue:    '0x4fb2e3'
+#     magenta: '0xab9df2'
+#     cyan:    '0x78dce8'
+#     white:   '0xfcfcfa'
 
 #   # Dim colors
 #   #
 #   # If the dim colors are not set, they will be calculated automatically based
 #   # on the `normal` colors.
-#   #dim:
+#   # dim:
 #   #  black:   '0x000000'
 #   #  red:     '0x8c3336'
 #   #  green:   '0x7a8530'
@@ -234,274 +234,7 @@ draw_bold_text_with_bright_colors: true
 #   # Example:
 #   #   `- { index: 16, color: '0xff00ff' }`
 #   #
-# indexed_colors: []
-
-# # Base16 Tomorrow Night 256 - alacritty color config
-# # Chris Kempson (http://chriskempson.com)
-# colors:
-#   # Default colors
-#   primary:
-#     background: '0x1d1f21'
-#     foreground: '0xc5c8c6'
-
-#   # Colors the cursor will use if `custom_cursor_colors` is true
-#   cursor:
-#     text: '0x1d1f21'
-#     cursor: '0xc5c8c6'
-
-#   # Normal colors
-#   normal:
-#     black:   '0x1d1f21'
-#     red:     '0xcc6666'
-#     green:   '0xb5bd68'
-#     yellow:  '0xf0c674'
-#     blue:    '0x81a2be'
-#     magenta: '0xb294bb'
-#     cyan:    '0x8abeb7'
-#     white:   '0xc5c8c6'
-
-#   # Bright colors
-#   bright:
-#     black:   '0x969896'
-#     red:     '0xcc6666'
-#     green:   '0xb5bd68'
-#     yellow:  '0xf0c674'
-#     blue:    '0x81a2be'
-#     magenta: '0xb294bb'
-#     cyan:    '0x8abeb7'
-#     white:   '0xffffff'
-
-#   indexed_colors:
-#     - { index: 16, color: '0xde935f' }
-#     - { index: 17, color: '0xa3685a' }
-#     - { index: 18, color: '0x282a2e' }
-#     - { index: 19, color: '0x373b41' }
-#     - { index: 20, color: '0xb4b7b4' }
-#     - { index: 21, color: '0xe0e0e0' }
-
-# # Colors (Gruvbox dark)
-# colors:
-#   # Default colors
-#   primary:
-#     # soft contrast: background = '0x32302f'
-#     # medium contrast: background = '0x282828'
-#     # hard contrast: background = '0x1d2021'
-#     background: '0x1d2021'
-#     foreground: '0xebdbb2'
-
-#   # Normal colors
-#   normal:
-#     black:   '0x282828'
-#     red:     '0xcc241d'
-#     green:   '0x98971a'
-#     yellow:  '0xd79921'
-#     blue:    '0x458588'
-#     magenta: '0xb16286'
-#     cyan:    '0x689d6a'
-#     white:   '0xa89984'
-
-#   # Bright colors
-#   bright:
-#     black:   '0x928374'
-#     red:     '0xfb4934'
-#     green:   '0xb8bb26'
-#     yellow:  '0xfabd2f'
-#     blue:    '0x83a598'
-#     magenta: '0xd3869b'
-#     cyan:    '0x8ec07c'
-#     white:   '0xebdbb2'
-
-# # Colors (Oceanic Next)
-# colors:
-#   # Default colors
-#   primary:
-#     background: '0x1b2b34'
-#     foreground: '0xd8dee9'
-
-#   # Colors the cursor will use if `custom_cursor_colors` is true
-#   cursor:
-#     text: '0x1b2b34'
-#     cursor: '0xffffff'
-
-#   # Normal colors
-#   normal:
-#     black:   '0x343d46'
-#     red:     '0xEC5f67'
-#     green:   '0x99C794'
-#     yellow:  '0xFAC863'
-#     blue:    '0x6699cc'
-#     magenta: '0xc594c5'
-#     cyan:    '0x5fb3b3'
-#     white:   '0xd8dee9'
-
-#   # Bright colors
-#   bright:
-#     black:   '0x343d46'
-#     red:     '0xEC5f67'
-#     green:   '0x99C794'
-#     yellow:  '0xFAC863'
-#     blue:    '0x6699cc'
-#     magenta: '0xc594c5'
-#     cyan:    '0x5fb3b3'
-#     white:   '0xd8dee9'
-
-# # Colors (One Dark)
-# colors:
-#   # Default colors
-#   primary:
-#     background: '0x282c34'
-#     foreground: '0xabb2bf'
-
-#   # Normal colors
-#   normal:
-#     # NOTE: Use '0x131613' for the `black` color if you'd like to see
-#     # black text on the background.
-#     black:   '0x131613'
-#     red:     '0xe06c75'
-#     green:   '0x98c379'
-#     yellow:  '0xd19a66'
-#     blue:    '0x61afef'
-#     magenta: '0xc678dd'
-#     cyan:    '0x56b6c2'
-#     white:   '0xabb2bf'
-
-#   # Bright colors
-#   bright:
-#     black:   '0x5c6370'
-#     red:     '0xe06c75'
-#     green:   '0x98c379'
-#     yellow:  '0xd19a66'
-#     blue:    '0x61afef'
-#     magenta: '0xc678dd'
-#     cyan:    '0x56b6c2'
-#     white:   '0xffffff'
-
-# # Colors (Material Theme)
-# colors:
-#   # Default colors
-#   primary:
-#     background: '0x1e282d'
-#     foreground: '0xc4c7d1'
-
-#   # Normal colors
-#   normal:
-#     black:   '0x666666'
-#     red:     '0xeb606b'
-#     green:   '0xc3e88d'
-#     yellow:  '0xf7eb95'
-#     blue:    '0x80cbc4'
-#     magenta: '0xff2f90'
-#     cyan:    '0xaeddff'
-#     white:   '0xffffff'
-
-#   # Bright colors
-#   bright:
-#     black:   '0xff262b'
-#     red:     '0xeb606b'
-#     green:   '0xc3e88d'
-#     yellow:  '0xf7eb95'
-#     blue:    '0x7dc6bf'
-#     magenta: '0x6c71c4'
-#     cyan:    '0x35434d'
-#     white:   '0xffffff'
-
-# # Colors (Seoul256)
-# colors:
-#   # Default colors
-#   primary:
-#     background: '0x3a3a3a'
-#     foreground: '0xd0d0d0'
-
-#   # Normal colors
-#   normal:
-#     black:   '0x4e4e4e'
-#     red:     '0xd68787'
-#     green:   '0x5f865f'
-#     yellow:  '0xd8af5f'
-#     blue:    '0x85add4'
-#     magenta: '0xd7afaf'
-#     cyan:    '0x87afaf'
-#     white:   '0xd0d0d0'
-
-#   # Bright colors
-#   bright:
-#     black:   '0x626262'
-#     red:     '0xd75f87'
-#     green:   '0x87af87'
-#     yellow:  '0xffd787'
-#     blue:    '0xadd4fb'
-#     magenta: '0xffafaf'
-#     cyan:    '0x87d7d7'
-#     white:   '0xe4e4e4'
-
-# Colors (Monokai Pro)
-colors:
-  # Default colors
-  primary:
-    background: '0x2d2a2e'
-    foreground: '0xfcfcfa'
-
-    # Bright and dim foreground colors
-    #
-    # The dimmed foreground color is calculated automatically if it is not present.
-    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
-    # is `false`, the normal foreground color will be used.
-    #dim_foreground: '0x9a9a9a'
-    #bright_foreground: '0xffffff'
-
-  # Cursor colors
-  #
-  # Colors which should be used to draw the terminal cursor. If these are unset,
-  # the cursor color will be the inverse of the cell color.
-  #cursor:
-  #  text: '0x000000'
-  #  cursor: '0xffffff'
-
-  # Normal colors
-  normal:
-    black:   '0x605d61' # 2d2a2e is original - i'm going to lighten it 20%
-    red:     '0xff6188'
-    green:   '0xa9dc76'
-    yellow:  '0xffd866'
-    blue:    '0x4fb2e3' # blue complement of monokai pro orange fc9867 - 10% darker
-    magenta: '0xab9df2'
-    cyan:    '0x78dce8'
-    white:   '0xfcfcfa'
-
-  # Bright colors
-  bright:
-    black:   '0x605d61'
-    red:     '0xff6188'
-    green:   '0xa9dc76'
-    yellow:  '0xffd866'
-    blue:    '0x4fb2e3'
-    magenta: '0xab9df2'
-    cyan:    '0x78dce8'
-    white:   '0xfcfcfa'
-
-  # Dim colors
-  #
-  # If the dim colors are not set, they will be calculated automatically based
-  # on the `normal` colors.
-  # dim:
-  #  black:   '0x000000'
-  #  red:     '0x8c3336'
-  #  green:   '0x7a8530'
-  #  yellow:  '0x97822e'
-  #  blue:    '0x506d8f'
-  #  magenta: '0x80638e'
-  #  cyan:    '0x497e7a'
-  #  white:   '0x9a9a9a'
-
-  # Indexed Colors
-  #
-  # The indexed colors include all colors from 16 to 256.
-  # When these are not set, they're filled with sensible defaults.
-  #
-  # Example:
-  #   `- { index: 16, color: '0xff00ff' }`
-  #
-  indexed_colors: []
+#   indexed_colors: []
 
 # Visual Bell
 #
