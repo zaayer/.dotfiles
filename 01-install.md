@@ -137,7 +137,7 @@ setfont ter-v14n
 echo "FONT=ter-v14n" ** /etc/vconsole.conf
 ```
 
-Setup the hosts file
+Setup the hosts file (**do not need to do this**)
 ```
 HOSTS=https://someonewhocares.org/hosts/hosts
 sudo curl -s $HOSTS -o /etc/hosts
