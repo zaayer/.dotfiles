@@ -1,5 +1,6 @@
 systemd-boot-pacman-hook
 dashbinsh
+dtrx
 unzip
 cpio
 rpm-org
