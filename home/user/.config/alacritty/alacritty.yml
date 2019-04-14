@@ -92,7 +92,7 @@ tabspaces: 8
 font:
   # Normal (roman) font face
   normal:
-    family: RobotoMono Nerd Font
+    family: IBM Plex Mono
     #family: Cousine
     # The `style` can be specified to pick a specific face.
     style: Medium
@@ -136,105 +136,105 @@ persistent_logging: false
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Colors (One Dark)
-colors:
-  # Default colors
-  primary:
-    background: '0x282c34'
-    foreground: '0xabb2bf'
-
-  # Normal colors
-  normal:
-    # NOTE: Use '0x131613' for the `black` color if you'd like to see
-    # black text on the background.
-    black:   '0x131613'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xd19a66'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0xabb2bf'
-
-  # Bright colors
-  bright:
-    black:   '0x5c6370'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xd19a66'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0xffffff'
-
-# # Colors (Monokai Pro)
+# # Colors (One Dark)
 # colors:
 #   # Default colors
 #   primary:
-#     background: '0x2d2a2e'
-#     foreground: '0xfcfcfa'
-
-#     # Bright and dim foreground colors
-#     #
-#     # The dimmed foreground color is calculated automatically if it is not present.
-#     # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
-#     # is `false`, the normal foreground color will be used.
-#     #dim_foreground: '0x9a9a9a'
-#     #bright_foreground: '0xffffff'
-
-#   # Cursor colors
-#   #
-#   # Colors which should be used to draw the terminal cursor. If these are unset,
-#   # the cursor color will be the inverse of the cell color.
-#   #cursor:
-#   #  text: '0x000000'
-#   #  cursor: '0xffffff'
+#     background: '0x282c34'
+#     foreground: '0xabb2bf'
 
 #   # Normal colors
 #   normal:
-#     black:   '0x605d61' # 2d2a2e is original - i'm going to lighten it 20%
-#     red:     '0xff6188'
-#     green:   '0xa9dc76'
-#     yellow:  '0xffd866'
-#     blue:    '0x4fb2e3' # blue complement of monokai pro orange fc9867 - 10% darker
-#     magenta: '0xab9df2'
-#     cyan:    '0x78dce8'
-#     white:   '0xfcfcfa'
+#     # NOTE: Use '0x131613' for the `black` color if you'd like to see
+#     # black text on the background.
+#     black:   '0x131613'
+#     red:     '0xe06c75'
+#     green:   '0x98c379'
+#     yellow:  '0xd19a66'
+#     blue:    '0x61afef'
+#     magenta: '0xc678dd'
+#     cyan:    '0x56b6c2'
+#     white:   '0xabb2bf'
 
 #   # Bright colors
 #   bright:
-#     black:   '0x605d61'
-#     red:     '0xff6188'
-#     green:   '0xa9dc76'
-#     yellow:  '0xffd866'
-#     blue:    '0x4fb2e3'
-#     magenta: '0xab9df2'
-#     cyan:    '0x78dce8'
-#     white:   '0xfcfcfa'
+#     black:   '0x5c6370'
+#     red:     '0xe06c75'
+#     green:   '0x98c379'
+#     yellow:  '0xd19a66'
+#     blue:    '0x61afef'
+#     magenta: '0xc678dd'
+#     cyan:    '0x56b6c2'
+#     white:   '0xffffff'
 
-#   # Dim colors
-#   #
-#   # If the dim colors are not set, they will be calculated automatically based
-#   # on the `normal` colors.
-#   # dim:
-#   #  black:   '0x000000'
-#   #  red:     '0x8c3336'
-#   #  green:   '0x7a8530'
-#   #  yellow:  '0x97822e'
-#   #  blue:    '0x506d8f'
-#   #  magenta: '0x80638e'
-#   #  cyan:    '0x497e7a'
-#   #  white:   '0x9a9a9a'
+# Colors (Monokai Pro)
+colors:
+  # Default colors
+  primary:
+    background: '0x2d2a2e'
+    foreground: '0xfcfcfa'
 
-#   # Indexed Colors
-#   #
-#   # The indexed colors include all colors from 16 to 256.
-#   # When these are not set, they're filled with sensible defaults.
-#   #
-#   # Example:
-#   #   `- { index: 16, color: '0xff00ff' }`
-#   #
-#   indexed_colors: []
+    # Bright and dim foreground colors
+    #
+    # The dimmed foreground color is calculated automatically if it is not present.
+    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
+    # is `false`, the normal foreground color will be used.
+    #dim_foreground: '0x9a9a9a'
+    #bright_foreground: '0xffffff'
+
+  # Cursor colors
+  #
+  # Colors which should be used to draw the terminal cursor. If these are unset,
+  # the cursor color will be the inverse of the cell color.
+  #cursor:
+  #  text: '0x000000'
+  #  cursor: '0xffffff'
+
+  # Normal colors
+  normal:
+    black:   '0x605d61' # 2d2a2e is original - i'm going to lighten it 20%
+    red:     '0xff6188'
+    green:   '0xa9dc76'
+    yellow:  '0xffd866'
+    blue:    '0x4fb2e3' # blue complement of monokai pro orange fc9867 - 10% darker
+    magenta: '0xab9df2'
+    cyan:    '0x78dce8'
+    white:   '0xfcfcfa'
+
+  # Bright colors
+  bright:
+    black:   '0x605d61'
+    red:     '0xff6188'
+    green:   '0xa9dc76'
+    yellow:  '0xffd866'
+    blue:    '0x4fb2e3'
+    magenta: '0xab9df2'
+    cyan:    '0x78dce8'
+    white:   '0xfcfcfa'
+
+  # Dim colors
+  #
+  # If the dim colors are not set, they will be calculated automatically based
+  # on the `normal` colors.
+  # dim:
+  #  black:   '0x000000'
+  #  red:     '0x8c3336'
+  #  green:   '0x7a8530'
+  #  yellow:  '0x97822e'
+  #  blue:    '0x506d8f'
+  #  magenta: '0x80638e'
+  #  cyan:    '0x497e7a'
+  #  white:   '0x9a9a9a'
+
+  # Indexed Colors
+  #
+  # The indexed colors include all colors from 16 to 256.
+  # When these are not set, they're filled with sensible defaults.
+  #
+  # Example:
+  #   `- { index: 16, color: '0xff00ff' }`
+  #
+  indexed_colors: []
 
 # Visual Bell
 #

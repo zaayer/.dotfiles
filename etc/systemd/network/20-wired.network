@@ -1,9 +1,0 @@
-[Match]
-Name=eno1
-
-[Network]
-DHCP=yes
-DNS=192.168.8.100
-
-[DHCP]
-RouteMetric=10

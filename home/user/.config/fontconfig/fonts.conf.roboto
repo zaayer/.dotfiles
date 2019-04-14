@@ -25,7 +25,7 @@
     <!-- Set preferred serif, sans serif, and monospace fonts. -->
     <alias>
         <family>serif</family>
-        <prefer><family>Roboto Slab</family></prefer>
+        <prefer><family>Roboto</family></prefer>
     </alias>
     <alias>
         <family>sans-serif</family>
@@ -74,13 +74,13 @@
     <match>
         <test name="family"><string>Times New Roman</string></test>
         <edit name="family" mode="assign" binding="strong">
-            <string>Roboto Slab</string>
+            <string>Roboto</string>
         </edit>
     </match>
     <match>
         <test name="family"><string>Times</string></test>
         <edit name="family" mode="assign" binding="strong">
-            <string>Roboto Slab</string>
+            <string>Roboto</string>
         </edit>
     </match>
     <match>
