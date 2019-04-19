@@ -120,7 +120,7 @@ let g:lightline = {
 
 set background=dark
 
-colorscheme monokai_pro
+"colorscheme monokai_pro
 
 " GRUVBOX
 "let g:gruvbox_italic = 1
@@ -141,10 +141,10 @@ colorscheme monokai_pro
 "let g:lightline.colorscheme = 'oceanicnext'
 
 " ONE DARK
-"let g:onedark_terminal_italics = 1
-"let g:onedark_hide_endofbuffer = 1
-"colorscheme onedark
-"let g:lightline.colorscheme = 'onedark'
+let g:onedark_terminal_italics = 1
+let g:onedark_hide_endofbuffer = 1
+colorscheme onedark
+let g:lightline.colorscheme = 'onedark'
 
 " MATERIAL PALE NIGHT
 "let g:palenight_terminal_italics = 1
@@ -157,7 +157,7 @@ colorscheme monokai_pro
 "let g:neodark#terminal_transparent = 1 "1 means use terminal background
 "let g:neodark#solid_vertsplit = 1 "1 to get solid vertical split matching status line
 "colorscheme neodark
-let g:lightline.colorscheme = 'neodark'
+"let g:lightline.colorscheme = 'neodark'
 
 " QUANTUM
 "let g:quantum_black = 1 "0 for standard quantum
@@ -167,9 +167,6 @@ let g:lightline.colorscheme = 'neodark'
 
 " BASE 16 VIM
 " Enable italic comments in base16 themes
-"function! s:base16_customize() abort
-"  call Base16hi("Comment", g:base16_gui03, "", g:base16_cterm03, "", "italic", "")
-"endfunction
 "let base16colorspace=256
 "colorscheme base16-material-darker
 "augroup on_change_colorschema

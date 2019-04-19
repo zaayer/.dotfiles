@@ -77,14 +77,7 @@ source $XDG_CONFIG_HOME/fish/colors.fish
 #set -g SPACEFISH_CHAR_SYMBOL "λ" # options: ◆ ⇢ ↳ ↪ λ → ⌘ Default: ➜
 set -g SPACEFISH_DIR_TRUNC 0
 set -g SPACEFISH_DIR_TRUNC_REPO false
-set -g SPACEFISH_DOCKER_SYMBOL " "
-set -g SPACEFISH_RUBY_SYMBOL " "
-set -g SPACEFISH_HASKELL_SYMBOL " "
-set -g SPACEFISH_RUST_SYMBOL " "
-set -g SPACEFISH_AWS_SYMBOL " "
-set -g SPACEFISH_PYENV_SYMBOL " "
-set -g SPACEFISH_GOLANG_SYMBOL "ﳑ "
-set -g SPACEFISH_PHP_SYMBOL " "
+set -g SPACEFISH_PROMPT_ORDER time user dir host git exec_time line_sep jobs exit_code char
 
 # SET PATHS
 
