@@ -1,0 +1,229 @@
+linux-gnu/Linux is supported.
+Unix Build
+Selected Generator: Ninja
+/tmp/tmp.uAL3gsTyzU
+VID: 0x308F (Boot: 0x308F)
+PID: 0x0013 (Boot: 0x0012)
+-- Build CPU Detected:
+x86_64
+-- Build Kernel Detected:
+Linux 4.15.13-x86_64-linode106
+-- Compiler Family:
+arm
+-- Compiler Selected:
+gcc
+-- Chip Selected:
+sam4s8b
+-- Chip Family:
+sam4s
+-- CPU Selected:
+cortex-m4
+-- Compiler Source Files:
+Lib/sam.c;Lib/delay.c;Lib/entropy.c;Lib/gpio.c;Lib/periodic.c;Lib/storage.c;Lib/time.c;Lib/utf8.c;Lib/arm_cortex.c;Lib/ASF/common/services/clock/sam4s/sysclk.c;Lib/ASF/common/utils/interrupt/interrupt_sam_nvic.c;Lib/ASF/sam/drivers/efc/efc.c;Lib/ASF/sam/drivers/pmc/pmc.c;Lib/ASF/sam/utils/cmsis/sam4s/source/templates/system_sam4s.c;Lib/ASF/sam/services/flash_efc/flash_efc.c
+-- Bootloader Type:
+dfu
+-- The C compiler identification is GNU 6.3.1
+-- Check for working C compiler: /usr/lib/ccache/arm-none-eabi-gcc
+-- Check for working C compiler: /usr/lib/ccache/arm-none-eabi-gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Full Compiler:
+/usr/lib/ccache/arm-none-eabi-gcc 6.3.1
+-- Detected Scan Module Source Files:
+Scan/Devices/ISSILed/i2c.c;Scan/Devices/ISSILed/led_scan.c;Scan/Devices/MatrixARMPeriodic/matrix_scan.c;Scan/Devices/Storage/storage.c;Scan/Kira/scan_loop.c
+-- Detected Macro Module Source Files:
+Macro/PartialMap/kll.c;Macro/PartialMap/layer.c;Macro/PartialMap/macro.c;Macro/PartialMap/result.c;Macro/PartialMap/trigger.c;Macro/PixelMap/pixel.c;/tmp/tmp.uAL3gsTyzU/generatedPixelmap.c
+-- Detected Output Module Source Files:
+Output/HID-IO/hidio_com.c;Output/Interface/output_gen.c;Output/USB/output_com.c;Output/USB/output_usb.c;Output/USB/arm/usb_desc.c;Output/USB/arm/usb_dev.c;Output/USB/arm/usb_joystick.c;Output/USB/arm/usb_keyboard.c;Output/USB/arm/usb_mem.c;Output/USB/arm/usb_mouse.c;Output/USB/arm/usb_rawio.c;Output/USB/arm/usb_serial.c;Output/USB/../../Lib/ASF/sam/drivers/udp/udp_device.c;Output/USB/../../Lib/ASF/common/services/usb/udc/udc.c;Output/USB/../../Lib/ASF/common/services/usb/class/cdc/device/udi_cdc.c
+-- Detected Debug Module Source Files:
+Debug/cli/cli.c;Debug/latency/latency.c;Debug/led/led.c;Debug/print/print.c
+-- Found Git: /usr/bin/git (found version "2.17.1") 
+-- Found LSB_RELEASE: /usr/bin/lsb_release  
+-- Build OS Detected:
+Ubuntu 18.04.1 LTS bionic
+-- Found Ctags: /usr/bin/ctags-exuberant (found version "5.9~svn20110310") 
+-- Found PythonInterp: python3 (found suitable version "3.6.7", minimum required is "3") 
+-- Checking for kll
+-- GITHUB_APIKEY was set.
+-- kll Version Detected: kll 0.5.7.12
+-- kll Installation Path: /root/.local/share/virtualenvs/Keyboards-41-guJFC/lib/python3.6/site-packages/kll
+-- kll Layouts Cache Path: /tmp/7-hid-io-layouts-c5410a1
+-- Detected Layout Files:
+/controller/Scan/Devices/ISSILed/capabilities.kll
+/controller/Scan/Devices/MatrixARMPeriodic/capabilities.kll
+/controller/Scan/Devices/Storage/capabilities.kll
+/controller/Macro/PartialMap/capabilities.kll
+/controller/Macro/PixelMap/capabilities.kll
+/controller/Output/HID-IO/capabilities.kll
+/controller/Output/USB/capabilities.kll
+/controller/Debug/latency/capabilities.kll
+/controller/Debug/led/capabilities.kll
+/controller/Lib/arm_cortex.kll
+/controller/Lib/sam.kll
+/controller/Scan/Kira/scancode_map.kll
+/root/.local/share/virtualenvs/Keyboards-41-guJFC/lib/python3.6/site-packages/kll/layouts/stdFuncMap.kll
+/tmp/tmp.uAL3gsTyzU/Kira-Standard-0.kll
+/root/.local/share/virtualenvs/Keyboards-41-guJFC/lib/python3.6/site-packages/kll/layouts/stdFuncMap.kll
+/tmp/tmp.uAL3gsTyzU/Kira-Standard-1.kll
+/root/.local/share/virtualenvs/Keyboards-41-guJFC/lib/python3.6/site-packages/kll/layouts/stdFuncMap.kll
+/tmp/tmp.uAL3gsTyzU/Kira-Standard-2.kll
+-- Found DFU_SUFFIX: /usr/bin/dfu-suffix (found version "0.9") 
+-- Found OBJDUMP: /usr/bin/arm-none-eabi-objdump  
+-- Configuring done
+-- Generating done
+CMake Warning (dev):
+  Policy CMP0058 is not set: Ninja requires custom command byproducts to be
+  explicit.  Run "cmake --help-policy CMP0058" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  This project specifies custom command DEPENDS on files in the build tree
+  that are not specified as the OUTPUT or BYPRODUCTS of any
+  add_custom_command or add_custom_target:
+
+   Kira-Standard-0.kll
+   Kira-Standard-1.kll
+   Kira-Standard-2.kll
+
+  For compatibility with versions of CMake that did not have the BYPRODUCTS
+  option, CMake is generating phony rules for such files to convince 'ninja'
+  to build.
+
+  Project authors should add the missing BYPRODUCTS or OUTPUT options to the
+  custom commands that produce these files.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Build files have been written to: /tmp/tmp.uAL3gsTyzU
+[1/51] Generating KLL Layout
+ERROR: /tmp/tmp.uAL3gsTyzU/Kira-Standard-0.kll
+      Contains possibly incompatible KLL expressions from 0.5.7.9
+      Please your configuration to KLL 0.5.7.11 compliant code
+ === 0.5.7.11 === 
+KLL now supports inverting the Layer Fade profile.
+This means when a layer is active, only the keys in that layer will show the active animation.
+It is used by default on Gemini Dusk and Dawn.
+
+To use, add the following to your KLL file:
+KLL_LED_FadeActiveLayerInvert = 1;
+KLL_LED_FadeBrightness[0] = 255;
+KLL_LED_FadeBrightness[1] = 255;
+KLL_LED_FadeBrightness[2] = 255;
+KLL_LED_FadeBrightness[3] = 0; # Sets unused LEDs to off
+Layer[1] : fade_layer_highlight(1); # Activates layer fade when layer is triggered
+Layer[2] : fade_layer_highlight(2); # Activates layer fade when layer is triggered
+
+ERROR: /tmp/tmp.uAL3gsTyzU/Kira-Standard-1.kll
+      Contains possibly incompatible KLL expressions from 0.5.7.9
+      Please your configuration to KLL 0.5.7.11 compliant code
+ === 0.5.7.11 === 
+KLL now supports inverting the Layer Fade profile.
+This means when a layer is active, only the keys in that layer will show the active animation.
+It is used by default on Gemini Dusk and Dawn.
+
+To use, add the following to your KLL file:
+KLL_LED_FadeActiveLayerInvert = 1;
+KLL_LED_FadeBrightness[0] = 255;
+KLL_LED_FadeBrightness[1] = 255;
+KLL_LED_FadeBrightness[2] = 255;
+KLL_LED_FadeBrightness[3] = 0; # Sets unused LEDs to off
+Layer[1] : fade_layer_highlight(1); # Activates layer fade when layer is triggered
+Layer[2] : fade_layer_highlight(2); # Activates layer fade when layer is triggered
+
+ERROR: /tmp/tmp.uAL3gsTyzU/Kira-Standard-2.kll
+      Contains possibly incompatible KLL expressions from 0.5.7.9
+      Please your configuration to KLL 0.5.7.11 compliant code
+ === 0.5.7.11 === 
+KLL now supports inverting the Layer Fade profile.
+This means when a layer is active, only the keys in that layer will show the active animation.
+It is used by default on Gemini Dusk and Dawn.
+
+To use, add the following to your KLL file:
+KLL_LED_FadeActiveLayerInvert = 1;
+KLL_LED_FadeBrightness[0] = 255;
+KLL_LED_FadeBrightness[1] = 255;
+KLL_LED_FadeBrightness[2] = 255;
+KLL_LED_FadeBrightness[3] = 0; # Sets unused LEDs to off
+Layer[1] : fade_layer_highlight(1); # Activates layer fade when layer is triggered
+Layer[2] : fade_layer_highlight(2); # Activates layer fade when layer is triggered
+
+-- Generating --
+/tmp/tmp.uAL3gsTyzU/kll_defs.h
+/tmp/tmp.uAL3gsTyzU/generatedKeymap.h
+/tmp/tmp.uAL3gsTyzU/usb_hid.h
+/tmp/tmp.uAL3gsTyzU/generatedPixelmap.c
+/tmp/tmp.uAL3gsTyzU/kll.json
+[2/51] Building C object CMakeFiles/kiibohd.dir/Lib/entropy.c.obj
+[3/51] Building C object CMakeFiles/kiibohd.dir/Lib/delay.c.obj
+[4/51] Building C object CMakeFiles/kiibohd.dir/Lib/gpio.c.obj
+[5/51] Building C object CMakeFiles/kiibohd.dir/Lib/periodic.c.obj
+[6/51] Building C object CMakeFiles/kiibohd.dir/main.c.obj
+[7/51] Building C object CMakeFiles/kiibohd.dir/Lib/utf8.c.obj
+[8/51] Building C object CMakeFiles/kiibohd.dir/Lib/storage.c.obj
+[9/51] Building C object CMakeFiles/kiibohd.dir/Lib/arm_cortex.c.obj
+[10/51] Building C object CMakeFiles/kiibohd.dir/Lib/sam.c.obj
+[11/51] Building C object CMakeFiles/kiibohd.dir/Lib/time.c.obj
+[12/51] Building C object CMakeFiles/kiibohd.dir/Lib/ASF/common/services/clock/sam4s/sysclk.c.obj
+[13/51] Building C object CMakeFiles/kiibohd.dir/Lib/ASF/sam/utils/cmsis/sam4s/source/templates/system_sam4s.c.obj
+[14/51] Building C object CMakeFiles/kiibohd.dir/Lib/ASF/common/utils/interrupt/interrupt_sam_nvic.c.obj
+[15/51] Building C object CMakeFiles/kiibohd.dir/Lib/ASF/sam/drivers/efc/efc.c.obj
+[16/51] Building C object CMakeFiles/kiibohd.dir/Scan/Devices/ISSILed/i2c.c.obj
+[17/51] Building C object CMakeFiles/kiibohd.dir/Lib/ASF/sam/services/flash_efc/flash_efc.c.obj
+[18/51] Building C object CMakeFiles/kiibohd.dir/Macro/PartialMap/kll.c.obj
+[19/51] Building C object CMakeFiles/kiibohd.dir/Scan/Devices/ISSILed/led_scan.c.obj
+[20/51] Building C object CMakeFiles/kiibohd.dir/Lib/ASF/sam/drivers/pmc/pmc.c.obj
+[21/51] Building C object CMakeFiles/kiibohd.dir/Scan/Kira/scan_loop.c.obj
+/controller/Scan/Kira/scan_loop.c: In function 'Scan_capslock':
+/controller/Scan/Kira/scan_loop.c:115:2: warning: implicit declaration of function 'Pixel_pixelSet' [-Wimplicit-function-declaration]
+  Pixel_pixelSet(&Pixel_Mapping[127-1], val);
+  ^~~~~~~~~~~~~~
+[22/51] Building C object CMakeFiles/kiibohd.dir/Scan/Devices/Storage/storage.c.obj
+[23/51] Building C object CMakeFiles/kiibohd.dir/Scan/Devices/MatrixARMPeriodic/matrix_scan.c.obj
+[24/51] Building C object CMakeFiles/kiibohd.dir/Macro/PartialMap/layer.c.obj
+[25/51] Building C object CMakeFiles/kiibohd.dir/generatedPixelmap.c.obj
+[26/51] Building C object CMakeFiles/kiibohd.dir/Output/Interface/output_gen.c.obj
+[27/51] Building C object CMakeFiles/kiibohd.dir/Macro/PartialMap/result.c.obj
+[28/51] Building C object CMakeFiles/kiibohd.dir/Macro/PartialMap/trigger.c.obj
+[29/51] Building C object CMakeFiles/kiibohd.dir/Output/USB/output_com.c.obj
+[30/51] Building C object CMakeFiles/kiibohd.dir/Output/USB/arm/usb_joystick.c.obj
+[31/51] Building C object CMakeFiles/kiibohd.dir/Macro/PartialMap/macro.c.obj
+[32/51] Building C object CMakeFiles/kiibohd.dir/Output/USB/arm/usb_desc.c.obj
+[33/51] Building C object CMakeFiles/kiibohd.dir/Output/USB/arm/usb_rawio.c.obj
+[34/51] Building C object CMakeFiles/kiibohd.dir/Output/HID-IO/hidio_com.c.obj
+[35/51] Building C object CMakeFiles/kiibohd.dir/Output/USB/arm/usb_mem.c.obj
+[36/51] Building C object CMakeFiles/kiibohd.dir/Output/USB/output_usb.c.obj
+/controller/Output/USB/output_usb.c: In function 'USB_indicator_update':
+/controller/Output/USB/output_usb.c:860:5: warning: implicit declaration of function 'Scan_numlock' [-Wimplicit-function-declaration]
+     Scan_numlock(cur);
+     ^~~~~~~~~~~~
+/controller/Output/USB/output_usb.c:863:5: warning: implicit declaration of function 'Scan_capslock' [-Wimplicit-function-declaration]
+     Scan_capslock(cur);
+     ^~~~~~~~~~~~~
+/controller/Output/USB/output_usb.c:866:5: warning: implicit declaration of function 'Scan_scrolllock' [-Wimplicit-function-declaration]
+     Scan_scrolllock(cur);
+     ^~~~~~~~~~~~~~~
+[37/51] Building C object CMakeFiles/kiibohd.dir/Output/USB/arm/usb_dev.c.obj
+[38/51] Building C object CMakeFiles/kiibohd.dir/Output/USB/arm/usb_keyboard.c.obj
+[39/51] Building C object CMakeFiles/kiibohd.dir/Output/USB/arm/usb_mouse.c.obj
+[40/51] Building C object CMakeFiles/kiibohd.dir/Macro/PixelMap/pixel.c.obj
+[41/51] Building C object CMakeFiles/kiibohd.dir/Output/USB/arm/usb_serial.c.obj
+[42/51] Building C object CMakeFiles/kiibohd.dir/Debug/print/print.c.obj
+[43/51] Building C object CMakeFiles/kiibohd.dir/Debug/latency/latency.c.obj
+[44/51] Building C object CMakeFiles/kiibohd.dir/Debug/led/led.c.obj
+[45/51] Building C object CMakeFiles/kiibohd.dir/Lib/ASF/common/services/usb/udc/udc.c.obj
+[46/51] Building C object CMakeFiles/kiibohd.dir/Lib/ASF/common/services/usb/class/cdc/device/udi_cdc.c.obj
+[47/51] Building C object CMakeFiles/kiibohd.dir/Debug/cli/cli.c.obj
+[48/51] Building C object CMakeFiles/kiibohd.dir/Lib/ASF/sam/drivers/udp/udp_device.c.obj
+[49/51] Linking C executable kiibohd.elf
+[50/51] Message for DFU targets
+ --> NOTE: kiibohd.secure.dfu.bin is required for secure Kiibohd Bootloaders.
+     Only keyboards from late 2017 and onwards, support this.
+     See lsusb -d 1c11: -v and look for iInterface 4 Kiibohd DFU Secure.
+     Otherwise, use the kiibohd.dfu.bin file when it says iInterface 4 Kiibohd DFU.
+     Use the physical reset button on the back of the keyboard to temporarily disable secure mode.
+ --> NOTE2: Secure mode is disabled currently, but will be enabled when key negotiation is supported.
+[51/51] Chip usage for sam4s8b
+	 SRAM: 	8% 	11704/131072	bytes
+	Flash: 	24% 	121380/499712	bytes
+Firmware has been compiled into: '/tmp/tmp.uAL3gsTyzU'
+/controller/Keyboards

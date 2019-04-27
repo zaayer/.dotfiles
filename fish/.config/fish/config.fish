@@ -82,4 +82,4 @@ set -g SPACEFISH_PROMPT_ORDER time user dir host git exec_time line_sep jobs exi
 # SET PATHS
 
 ## load defined path into fish_user_paths
-set fish_user_paths $CARGO_HOME/bin $GOPATH/bin $NPM_CONFIG_PREFIX/bin
+set fish_user_paths $CARGO_HOME/bin $GOPATH/bin $NPM_CONFIG_PREFIX/bin $HOME/.local/bin
