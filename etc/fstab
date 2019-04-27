@@ -1,11 +1,11 @@
 # /dev/mapper/vg0-lvroot LABEL=root
-LABEL=root	/         	ext4      	rw,noatime,stripe=32	0 1
+LABEL=root	/         	ext4      	rw,defaults,nodiscard,noatime,commit=60,stripe=32	0 1
 
 # /dev/mapper/vg0-lvvar LABEL=var
-LABEL=var	/var      	ext4      	rw,noatime,stripe=32	0 2
+LABEL=var	/var      	ext4      	rw,defaults,nodiscard,noatime,commit=60,stripe=32	0 2
 
 # /dev/mapper/vg0-lvhome LABEL=home
-LABEL=home	/home     	ext4      	rw,noatime,stripe=32	0 2
+LABEL=home	/home     	ext4      	rw,defaults,nodiscard,noatime,commit=60,stripe=32	0 2
 
 # /dev/nvme0n1p1 LABEL=EFI
 LABEL=EFI      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro	0 2

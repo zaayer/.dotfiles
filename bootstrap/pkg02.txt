@@ -16,7 +16,9 @@ libva-mesa-driver
 xf86-video-amdgpu
 xf86-video-intel
 vulkan-radeon
-opencl-amd
+opencl-mesa
+opencl-headers
+openmp
 intel-media-driver
 libva-vdpau-driver
 libxss
