@@ -29,14 +29,15 @@ if dein#load_state('/home/zaayer/.local/share/dein')
 
     " Add my favorite colorschemes
     "call dein#add('junegunn/seoul256.vim')
-    "call dein#add('arcticicestudio/nord-vim')
-    "call dein#add('mhartington/oceanic-next')
+    call dein#add('arcticicestudio/nord-vim')
+    call dein#add('mhartington/oceanic-next')
     call dein#add('joshdick/onedark.vim')
     call dein#add('chriskempson/base16-vim')
     call dein#add('phanviet/vim-monokai-pro')
     "call dein#add('drewtempelmeyer/palenight.vim')
     call dein#add('KeitaNakamura/neodark.vim')
     call dein#add('tyrannicaltoucan/vim-quantum')
+    call dein#add('zaayer/lightline-monokai-pro')
 
     " Minimal status line
     call dein#add('itchyny/lightline.vim')
@@ -120,7 +121,8 @@ let g:lightline = {
 
 set background=dark
 
-"colorscheme monokai_pro
+colorscheme monokai_pro
+let g:lightline.colorscheme = 'monokai_pro'
 
 " GRUVBOX
 "let g:gruvbox_italic = 1
@@ -129,8 +131,10 @@ set background=dark
 "let g:lightline.colorscheme = 'gruvbox'
 
 " NORD
-"let g:nord_italic = 0
-"let g:nord_italic_comments = 0
+"let g:nord_italic = 1
+"let g:nord_underline = 1
+"let g:nord_italic_comments = 1
+"let g:nord_cursor_line_number_background = 1
 "colorscheme nord
 "let g:lightline.colorscheme = 'nord'
 
@@ -141,10 +145,10 @@ set background=dark
 "let g:lightline.colorscheme = 'oceanicnext'
 
 " ONE DARK
-let g:onedark_terminal_italics = 1
-let g:onedark_hide_endofbuffer = 1
-colorscheme onedark
-let g:lightline.colorscheme = 'onedark'
+"let g:onedark_terminal_italics = 1
+"let g:onedark_hide_endofbuffer = 1
+"colorscheme onedark
+"let g:lightline.colorscheme = 'onedark'
 
 " MATERIAL PALE NIGHT
 "let g:palenight_terminal_italics = 1
