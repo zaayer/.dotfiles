@@ -1,5 +1,6 @@
 {
-	"font_size": 10,
+	"font_face": "SF Mono Medium",
+	"font_size": 11,
 	"theme": "Merge Dark.sublime-theme",
 	"translate_tabs_to_spaces": true
 }
