@@ -44,10 +44,6 @@ set -gx FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"
 set -gx FZF_ALT_C_COMMAND "fd --type d"
 
 
-## options for bat
-set -gx BAT_THEME "Sublime Snazzy"
-
-
 ## options for less pager
 set -gx LESS "-F -g -i -M -R -S -w -X -z-4"
 

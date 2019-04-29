@@ -1,0 +1,14 @@
+# Set the theme to "TwoDark"
+--theme="TwoDark"
+
+# Always use italic text
+--italic-text=always
+
+# Use YAML for generic conf files
+--map-syntax conf:yaml
+
+# Use "gitignore" highlighting for generic .ignore files
+--map-syntax .ignore:.gitignore
+
+# Use bash highlighting for fish files
+--map-syntax fish:bash

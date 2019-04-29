@@ -1,0 +1,15 @@
+{
+	"accent_color": "$scheme_accent_color",
+	"font_face": "SF Pro Text Bold",
+	"font_size": 12,
+	"skin":
+	{
+		"id": "origin",
+		"settings":
+		{
+		}
+	},
+	"tab_line_width": 2,
+	"show_tab_dropdown_button": false,
+	"show_tab_scroll_buttons": false,
+}
