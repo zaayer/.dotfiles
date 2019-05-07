@@ -48,11 +48,22 @@ end
 
 
 ## options for fzf
-set -gx FZF_DEFAULT_COMMAND "fd --type f"
-set -gx FZF_DEFAULT_OPTS "--height 60% --reverse --border"
-set -gx FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"
-set -gx FZF_ALT_C_COMMAND "fd --type d"
 
+# all
+set -g FZF_DEFAULT_OPTS "--height 60% --reverse --border"
+
+# legacy shipped with fzf
+#set -g FZF_DEFAULT_COMMAND "fd --type f"
+#set -g FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"
+#set -g FZF_ALT_C_COMMAND "fd --type d"
+
+# using fisher installed fzf bindings
+set -g FZF_FIND_FILE_COMMAND "fd --type f . \$dir"
+set -g FZF_CD_COMMAND "fd --type d . \$dir"
+set -g FZF_CD_WITH_HIDDEN_COMMAND "fd --type d --hidden . \$dir"
+set -g FZF_OPEN_COMMAND "fd --type d --type f --hidden . \$dir"
+set -g FZF_PREVIEW_FILE_CMD "head -n 5"
+set -g FZF_PREVIEW_DIR_CMD "l"
 
 ## options for less pager
 set -gx LESS "-F -g -i -M -R -S -w -X -z-4"
