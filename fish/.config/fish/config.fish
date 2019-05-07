@@ -37,6 +37,16 @@ set -gx WGETRC $XDG_CONFIG_HOME/wget/wgetrc
 # set -gx STACK_ROOT $XDG_DATA_HOME/stack
 
 
+## options for fisher
+set -g fisher_path $HOME/.config/fish/fisher
+set fish_function_path $fish_function_path[1] $fisher_path/functions $fish_function_path[2..-1]
+set fish_complete_path $fish_complete_path[1] $fisher_path/completions $fish_complete_path[2..-1]
+
+for file in $fisher_path/conf.d/*.fish
+    builtin source $file 2> /dev/null
+end
+
+
 ## options for fzf
 set -gx FZF_DEFAULT_COMMAND "fd --type f"
 set -gx FZF_DEFAULT_OPTS "--height 60% --reverse --border"
