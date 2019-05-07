@@ -71,9 +71,9 @@ source $XDG_CONFIG_HOME/fish/colors.fish
 
 # SET SPACEFISH PROMPT OPTIONS
 #set -g SPACEFISH_CHAR_SYMBOL "λ" # options: ◆ ⇢ ↳ ↪ λ → ⌘ Default: ➜
-set -g SPACEFISH_DIR_TRUNC 0
-set -g SPACEFISH_DIR_TRUNC_REPO false
-set -g SPACEFISH_PROMPT_ORDER time user dir host git exec_time line_sep jobs exit_code char
+#set -g SPACEFISH_DIR_TRUNC 0
+#set -g SPACEFISH_DIR_TRUNC_REPO false
+#set -g SPACEFISH_PROMPT_ORDER time user dir host git exec_time line_sep jobs exit_code char
 
 # SET PATHS
 

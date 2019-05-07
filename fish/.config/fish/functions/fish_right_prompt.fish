@@ -1,19 +1,5 @@
-function fish_right_prompt
+function fish_right_prompt \
+    --description "Let user override prompt"
 
-	# ------------------------------------------------------------------------------
-	# Configuration
-	# ------------------------------------------------------------------------------
-
-	__sf_util_set_default SPACEFISH_RPROMPT_ORDER ""
-
-	# ------------------------------------------------------------------------------
-	# Sections
-	# ------------------------------------------------------------------------------
-
-	[ -n "$SPACEFISH_RPROMPT_ORDER" ]; or return
-
-	for i in $SPACEFISH_RPROMPT_ORDER
-		eval __sf_section_$i
-	end
-	set_color normal
+    printf "%s%s%s" $pure_color_right_prompt "$pure_right_prompt" $pure_color_normal
 end
