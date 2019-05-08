@@ -49,15 +49,15 @@ end
 
 ## options for fzf
 
-# all
+### all
 set -g FZF_DEFAULT_OPTS "--height 60% --reverse --border"
 
-# legacy shipped with fzf
+### legacy shipped with fzf
 #set -g FZF_DEFAULT_COMMAND "fd --type f"
 #set -g FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"
 #set -g FZF_ALT_C_COMMAND "fd --type d"
 
-# using fisher installed fzf bindings
+### using fisher installed fzf bindings
 set -g FZF_FIND_FILE_COMMAND "fd --type f . \$dir"
 set -g FZF_CD_COMMAND "fd --type d . \$dir"
 set -g FZF_CD_WITH_HIDDEN_COMMAND "fd --type d --hidden . \$dir"
@@ -90,11 +90,9 @@ set -gx LESS_TERMCAP_ue (set_color normal)  # reset underline
 source $XDG_CONFIG_HOME/fish/colors.fish
 
 
-# SET SPACEFISH PROMPT OPTIONS
-#set -g SPACEFISH_CHAR_SYMBOL "λ" # options: ◆ ⇢ ↳ ↪ λ → ⌘ Default: ➜
-#set -g SPACEFISH_DIR_TRUNC 0
-#set -g SPACEFISH_DIR_TRUNC_REPO false
-#set -g SPACEFISH_PROMPT_ORDER time user dir host git exec_time line_sep jobs exit_code char
+## Spacefish prompt options
+set -g SPACEFISH_PROMPT_ORDER time user dir host git exec_time line_sep jobs exit_code char
+
 
 # SET PATHS
 
