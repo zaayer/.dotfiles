@@ -14,22 +14,22 @@ set -gx XDG_CACHE_HOME $HOME/.cache
 
 
 ## fixes to use XDG structure
-set -gx PIP_CONFIG_FILE $XDG_CONFIG_HOME/pip/pip.conf
-set -gx PYLINTHOME $XDG_CACHE_HOME/pylint
+# set -gx PIP_CONFIG_FILE $XDG_CONFIG_HOME/pip/pip.conf
+# set -gx PYLINTHOME $XDG_CACHE_HOME/pylint
 set -gx RUSTUP_HOME $XDG_DATA_HOME/rustup
 set -gx CARGO_HOME $XDG_DATA_HOME/cargo
-set -gx NPM_CONFIG_USERCONFIG $XDG_CONFIG_HOME/npm/npmrc
-set -gx NPM_CONFIG_PREFIX $XDG_DATA_HOME/npm
-set -gx NPM_CONFIG_CACHE $XDG_CACHE_HOME/npm
-set -gx NODE_REPL_HISTORY $XDG_DATA_HOME/node_repl_history
+# set -gx NPM_CONFIG_USERCONFIG $XDG_CONFIG_HOME/npm/npmrc
+# set -gx NPM_CONFIG_PREFIX $XDG_DATA_HOME/npm
+# set -gx NPM_CONFIG_CACHE $XDG_CACHE_HOME/npm
+# set -gx NODE_REPL_HISTORY $XDG_DATA_HOME/node_repl_history
 set -gx GNUPGHOME $XDG_DATA_HOME/gnupg
 set -gx LESSHISTFILE $XDG_DATA_HOME/less/history
 set -gx GOPATH $XDG_DATA_HOME/go
 set -gx GOCACHE $XDG_CACHE_HOME/go
-set -gx GEM_HOME $XDG_DATA_HOME/gem
-set -gx GEM_SPEC_CACHE $XDG_CACHE_HOME/gem
-set -gx GEMRC $XDG_CONFIG_HOME/gem/gemrc
-set -gx _JAVA_OPTIONS Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
+# set -gx GEM_HOME $XDG_DATA_HOME/gem
+# set -gx GEM_SPEC_CACHE $XDG_CACHE_HOME/gem
+# set -gx GEMRC $XDG_CONFIG_HOME/gem/gemrc
+# set -gx _JAVA_OPTIONS Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 set -gx WGETRC $XDG_CONFIG_HOME/wget/wgetrc
 # set -gx XAUTHORITY $XDG_RUNTIME_DIR/Xauthority
 # set -gx GTK2_RC_FILES $XDG_CONFIG_HOME/gtk-2.0/gtkrc
@@ -97,4 +97,4 @@ set -g SPACEFISH_PROMPT_ORDER time user dir host git exec_time line_sep jobs exi
 # SET PATHS
 
 ## load defined path into fish_user_paths
-set fish_user_paths $CARGO_HOME/bin $GOPATH/bin $NPM_CONFIG_PREFIX/bin $HOME/.local/bin
+set fish_user_paths $CARGO_HOME/bin $GOPATH/bin $HOME/.local/bin

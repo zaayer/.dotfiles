@@ -196,7 +196,7 @@ colors:
 
   # Normal colors
   normal:
-    black:   '0x605d61' # 2d2a2e is original - i'm going to lighten it 20%
+    black:   '0x403e41' # 2d2a2e is original - i'm going to lighten it 20%
     red:     '0xff6188'
     green:   '0xa9dc76'
     yellow:  '0xffd866'
@@ -207,7 +207,7 @@ colors:
 
   # Bright colors
   bright:
-    black:   '0x605d61'
+    black:   '0x727072'
     red:     '0xff6188'
     green:   '0xa9dc76'
     yellow:  '0xffd866'
