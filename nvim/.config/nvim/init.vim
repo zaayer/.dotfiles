@@ -1,9 +1,9 @@
-set rtp+=/home/zaayer/.local/share/dein/repos/github.com/Shougo/dein.vim
+set rtp+=~/.local/share/dein/repos/github.com/Shougo/dein.vim
 
-if dein#load_state('/home/zaayer/.local/share/dein')
-    call dein#begin('/home/zaayer/.local/share/dein')
+if dein#load_state('~/.local/share/dein')
+    call dein#begin('~/.local/share/dein')
 
-    call dein#add('/home/zaayer/.local/share/dein/repos/github.com/Shougo/dein.vim')
+    call dein#add('~/.local/share/dein/repos/github.com/Shougo/dein.vim')
 
     " Enable snippets
     call dein#add('Shougo/neosnippet.vim')
@@ -79,7 +79,7 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""
 
 " Set Black virtualenv
-let g:black_virtualenv = '/home/zaayer/.local/share/black'
+let g:black_virtualenv = '~/.local/share/black'
 
 " Set command to autorun black on Save
 autocmd BufWritePost *.py execute ':Black'
