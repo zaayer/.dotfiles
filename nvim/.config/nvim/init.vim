@@ -121,8 +121,8 @@ let g:lightline = {
 
 set background=dark
 
-colorscheme monokai_pro
-let g:lightline.colorscheme = 'monokai_pro'
+"colorscheme monokai_pro
+"let g:lightline.colorscheme = 'monokai_pro'
 
 " GRUVBOX
 "let g:gruvbox_italic = 1
@@ -144,11 +144,11 @@ let g:lightline.colorscheme = 'monokai_pro'
 "colorscheme OceanicNext
 "let g:lightline.colorscheme = 'oceanicnext'
 
-" ONE DARK
-"let g:onedark_terminal_italics = 1
-"let g:onedark_hide_endofbuffer = 1
-"colorscheme onedark
-"let g:lightline.colorscheme = 'onedark'
+"" ONE DARK
+let g:onedark_terminal_italics = 1
+let g:onedark_hide_endofbuffer = 1
+colorscheme onedark
+let g:lightline.colorscheme = 'onedark'
 
 " MATERIAL PALE NIGHT
 "let g:palenight_terminal_italics = 1

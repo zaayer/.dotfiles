@@ -37,6 +37,9 @@ set -gx WGETRC $XDG_CONFIG_HOME/wget/wgetrc
 # set -gx STACK_ROOT $XDG_DATA_HOME/stack
 
 
+## source api keys as needed
+source $HOME/.api/vultr.fish
+
 ## options for fisher
 set -g fisher_path $HOME/.config/fish/fisher
 set fish_function_path $fish_function_path[1] $fisher_path/functions $fish_function_path[2..-1]
