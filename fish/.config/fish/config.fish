@@ -38,7 +38,7 @@ set -gx WGETRC $XDG_CONFIG_HOME/wget/wgetrc
 
 
 ## source api keys as needed
-source $HOME/.api/vultr.fish
+builtin source $HOME/.api/vultr.fish
 
 ## options for fisher
 set -g fisher_path $HOME/.config/fish/fisher
@@ -90,7 +90,7 @@ set -gx LESS_TERMCAP_ue (set_color normal)  # reset underline
 
 
 ## fish color options
-source $XDG_CONFIG_HOME/fish/colors.fish
+builtin source $XDG_CONFIG_HOME/fish/colors.fish
 
 
 ## Spacefish prompt options
