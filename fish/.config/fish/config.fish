@@ -38,7 +38,7 @@ set -gx WGETRC $XDG_CONFIG_HOME/wget/wgetrc
 
 
 ## source api keys as needed
-builtin source $HOME/.api/vultr.fish
+builtin source $XDG_DATA_HOME/apikeys/api.fish
 
 ## options for fisher
 set -g fisher_path $HOME/.config/fish/fisher

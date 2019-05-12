@@ -136,12 +136,12 @@ export LESS='-F -g -i -M -R -S -w -X -z-4'
 
 if [ -x /usr/bin/pygmentize ]; then
     export LESSCOLORIZER=pygmentize
-end
+fi
 
 if [ -x /usr/bin/lesspipe.sh ]; then
     export LESSOPEN="| /usr/bin/lesspipe.sh %s"
     export LESS_ADVANCED_PREPROCESSOR=1
-end
+fi
 
 # Tab complete sudo commands
 complete -cf sudo
@@ -152,8 +152,8 @@ if [ -f ~/.config/bash/xdgfix.sh ]; then
 fi
 
 # Source api keys
-if [ -f ~/.config/bash/api.sh ]; then
-    . ~/.config/bash/api.sh
+if [ -f ~/.local/share/apikeys/api.sh ]; then
+    . ~/.local/share/apikeys/api.sh
 fi
 
 ##################################
@@ -185,6 +185,18 @@ fi
 [[ -d $CARGO_HOME/bin ]] && PATH+=":$CARGO_HOME/bin"
 [[ -d $GOPATH/bin ]] && PATH+=":$GOPATH/bin"
 [[ -d $HOME/.local/bin ]] && PATH+="$HOME/.local/bin"
+
+##################################
+####        set prompt        ####
+##################################
+
+if [ -f ~/.config/bash/pureline.sh && -f ~/.config/bash/pureline.conf ]; then
+    . ~/.config/bash/pureline.sh ~/.config/bash/pureline.conf
+elif [ -f ~/.config/bash/prompt.sh ]; then
+    . ~/.config/bash/prompt.sh
+else
+    PS1="➜ "
+fi
 
 ##################################
 ####    run bash greeting     ####

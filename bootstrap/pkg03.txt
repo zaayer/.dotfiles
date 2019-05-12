@@ -20,3 +20,4 @@ ttf-merriweather
 ttf-merriweather-sans
 ttf-mplus
 otf-overpass
+ttf-clear-sans
