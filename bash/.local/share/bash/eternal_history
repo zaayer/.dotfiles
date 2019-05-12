@@ -28,3 +28,13 @@ cat eternal_history
 cd
 #1557700118
 la
+#1557700210
+cd .dotfiles
+#1557700214
+la
+#1557700226
+git st
+#1557700286
+subl .gitignore
+#1557700303
+git st

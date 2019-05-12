@@ -174,8 +174,8 @@ fi
 
 if [[ -f /usr/share/fzf/completion.bash && \
     ! -f ~/.local/share/bash-completion/completions/fzf.sh ]]; then
-    ln -s ~/.local/share/bash-completion/completions/fzf.sh \
-          /usr/share/fzf/completion.bash
+    ln -s /usr/share/fzf/completion.bash \
+          ~/.local/share/bash-completion/completions/fzf.sh
 fi
 
 ##################################
