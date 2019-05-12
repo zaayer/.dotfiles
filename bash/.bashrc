@@ -172,8 +172,8 @@ fi
 ####       completions        ####
 ##################################
 
-if [ -f /usr/share/fzf/completion.bash ] && \
-   [ ! -f ~/.local/share/bash-completion/completions/fzf.sh ]; then
+if [[ -f /usr/share/fzf/completion.bash && \
+    ! -f ~/.local/share/bash-completion/completions/fzf.sh ]]; then
     ln -s ~/.local/share/bash-completion/completions/fzf.sh \
           /usr/share/fzf/completion.bash
 fi
@@ -190,7 +190,7 @@ fi
 ####        set prompt        ####
 ##################################
 
-if [ -f ~/.config/bash/pureline.sh && -f ~/.config/bash/pureline.conf ]; then
+if [[ -f ~/.config/bash/pureline.sh && -f ~/.config/bash/pureline.conf ]]; then
     . ~/.config/bash/pureline.sh ~/.config/bash/pureline.conf
 elif [ -f ~/.config/bash/prompt.sh ]; then
     . ~/.config/bash/prompt.sh
