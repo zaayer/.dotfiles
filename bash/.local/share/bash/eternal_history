@@ -14,3 +14,17 @@ subl .bashrc
 man ln
 #1557699848
 chsh -s /usr/bin/fish
+#1557700064
+man ln
+#1557700075
+la
+#1557700099
+cd .local/share/bash
+#1557700100
+la
+#1557700107
+cat eternal_history
+#1557700116
+cd
+#1557700118
+la
