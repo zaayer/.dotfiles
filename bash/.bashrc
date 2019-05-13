@@ -50,9 +50,6 @@ shopt -s histappend
 # Save multi-line commands as one command
 shopt -s cmdhist
 
-# Record each line as it gets issued
-PROMPT_COMMAND='history -a'
-
 # Unlimited history
 HISTSIZE=-1
 HISTFILESIZE=-1
@@ -61,12 +58,12 @@ HISTFILESIZE=-1
 HISTCONTROL='erasedups:ignoreboth'
 
 # Don't record some commands
-export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear"
+HISTIGNORE="&:[ ]*:exit:ls:la:ll:l:cd:bg:fg:history:clear"
 
 # Use standard ISO 8601 timestamp
 # %F equivalent to %Y-%m-%d
 # %T equivalent to %H:%M:%S (24-hours format)
-HISTTIMEFORMAT="%F %T: "
+HISTTIMEFORMAT=$(echo -e "\e[1;32m%F\e[1;34m | \e[1;32m%T\e[1;34m |\e[0m ")
 
 # Enable incremental history search with up/down arrows
 bind '"\e[A": history-search-backward'
@@ -184,7 +181,7 @@ fi
 
 [[ -d $CARGO_HOME/bin ]] && PATH+=":$CARGO_HOME/bin"
 [[ -d $GOPATH/bin ]] && PATH+=":$GOPATH/bin"
-[[ -d $HOME/.local/bin ]] && PATH+="$HOME/.local/bin"
+[[ -d $HOME/.local/bin ]] && PATH+=":$HOME/.local/bin"
 
 ##################################
 ####        set prompt        ####
@@ -197,6 +194,8 @@ if [ -f ~/.config/bash/prompt.sh ]; then
 else
     PS1="➜ "
 fi
+
+PROMPT_COMMAND="$PROMPT_COMMAND; history -a"
 
 ##################################
 ####    run bash greeting     ####

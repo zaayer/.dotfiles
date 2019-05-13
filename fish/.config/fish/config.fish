@@ -35,7 +35,8 @@ set -gx WGETRC $XDG_CONFIG_HOME/wget/wgetrc
 # set -gx GTK2_RC_FILES $XDG_CONFIG_HOME/gtk-2.0/gtkrc
 # set -gx RBENV_ROOT $XDG_DATA_HOME/rbenv
 # set -gx STACK_ROOT $XDG_DATA_HOME/stack
-
+set -gx DOCKER_CONFIG $XDG_CONFIG_HOME/docker
+set -gx MACHINE_STORAGE_PATH $XDG_DATA_HOME/docker-machine
 
 ## source api keys as needed
 builtin source $XDG_DATA_HOME/apikeys/api.fish

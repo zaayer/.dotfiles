@@ -52,18 +52,26 @@ __makePS1() {
     # Start with a line separator from last output
     PS1="\n"
 
+    local cyanbold="\e[1;36m"
+    local greenbold="\e[1;32m"
+    local redbold="\e[1;31m"
+    local reset="\e[0m"
+    local newline="\n"
+
+    # Insert path and then new line
+    PS1+="${cyanbold}\w${reset}${newline}"
+
     # Check if root, use bashism if possible for speed
     # else use id command for POSIX, which is slower
     if ((${EUID:-0} || "$(id -u)")); then
-        PS1+="\e[1;32mλ\e[0m "
+        PS1+="${greenbold}λ${reset} "
     else
-        PS1+="\e[1;31mπ\e[0m "
+        PS1+="${redbold}π${reset} "
     fi
 }
 
 # Set the main prompt
 PROMPT_COMMAND=__makePS1
-PROMPT_COMMAND="$PROMPT_COMMAND; history -a"
 
 # Set the continuation prompt
 PS2="\e[1;33m...\e[0m "

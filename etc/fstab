@@ -15,6 +15,7 @@ LABEL=swp	none      	swap      	defaults  	0 0
 
 tmpfs /home/zaayer/.cache/chromium tmpfs rw,noatime,size=1G,nr_inodes=5k,noexec,nodev,nosuid,uid=zaayer,gid=zaayer,mode=1700 0 0
 tmpfs /home/zaayer/.config/kiibohd-configurator/Cache tmpfs rw,noatime,size=1G,nr_inodes=5k,noexec,nodev,nosuid,uid=zaayer,gid=zaayer,mode=1700 0 0
+tmpfs /home/zaayer/.local/share/docker-machine/cache tmpfs rw,noatime,size=1G,nr_inodes=5k,noexec,nodev,nosuid,uid=zaayer,gid=zaayer,mode=1700 0 0
 
 # tmpfs /home/zaayer/.cache/mozilla tmpfs rw,noatime,size=1G,nr_inodes=5k,noexec,nodev,nosuid,uid=zaayer,gid=zaayer,mode=1700 0 0
 # tmpfs /home/zaayer/.cache/opera tmpfs rw,noatime,size=1G,nr_inodes=5k,noexec,nodev,nosuid,uid=zaayer,gid=zaayer,mode=1700 0 0
