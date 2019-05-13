@@ -62,7 +62,8 @@ __makePS1() {
 }
 
 # Set the main prompt
-PS1="$(__makePS1)"
+PROMPT_COMMAND=__makePS1
+PROMPT_COMMAND="$PROMPT_COMMAND; history -a"
 
 # Set the continuation prompt
 PS2="\e[1;33m...\e[0m "

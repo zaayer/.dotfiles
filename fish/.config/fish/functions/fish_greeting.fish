@@ -1,8 +1,8 @@
 function fish_greeting -d "Greeting when shell is started."
-    # print out the current version of Fish at start-up
-    set_color cyan
-    echo "Welcome to Fish $version."
-    printf '\n'
+    # # print out the current version of Fish at start-up
+    # set_color cyan
+    # echo "Welcome to Fish $version."
+    # printf '\n'
 
     # if the neofetch command exists, then run it
     if command -sq neofetch

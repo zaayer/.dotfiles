@@ -66,7 +66,7 @@ export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear"
 # Use standard ISO 8601 timestamp
 # %F equivalent to %Y-%m-%d
 # %T equivalent to %H:%M:%S (24-hours format)
-HISTTIMEFORMAT='%F %T '
+HISTTIMEFORMAT="%F %T: "
 
 # Enable incremental history search with up/down arrows
 bind '"\e[A": history-search-backward'
@@ -190,9 +190,9 @@ fi
 ####        set prompt        ####
 ##################################
 
-if [[ -f ~/.config/bash/pureline.sh && -f ~/.config/bash/pureline.conf ]]; then
-    . ~/.config/bash/pureline.sh ~/.config/bash/pureline.conf
-elif [ -f ~/.config/bash/prompt.sh ]; then
+#if [[ -f ~/.config/bash/pureline.sh && -f ~/.config/bash/pureline.conf ]]; then
+#    . ~/.config/bash/pureline.sh ~/.config/bash/pureline.conf
+if [ -f ~/.config/bash/prompt.sh ]; then
     . ~/.config/bash/prompt.sh
 else
     PS1="➜ "
