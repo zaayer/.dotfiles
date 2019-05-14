@@ -59,7 +59,7 @@ __makePS1() {
     local newline="\n"
 
     # Insert path and then new line
-    PS1+="${cyanbold}\W${reset}${newline}"
+    PS1+="${cyanbold}\w${reset}${newline}"
 
     # Check if root, use bashism if possible for speed
     # else use id command for POSIX, which is slower
