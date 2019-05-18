@@ -17,3 +17,5 @@
 /etc/ufw/user.rules
 /etc/ufw/user6.rules
 /etc/xdg/user-dirs.defaults
+/usr/lib/systemd/user/restic-backup.service
+/usr/lib/systemd/user/restic-backup.timer

@@ -36,3 +36,13 @@ trd() {
         echo "tree not found in path."
     fi
 }
+
+vultr() {
+    . ~/.local/share/apikeys/vultr.sh
+    vultr "$@"
+}
+
+restic() {
+    . ~/.local/share/apikeys/restic.sh
+    restic "$@"
+}

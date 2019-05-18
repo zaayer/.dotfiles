@@ -149,9 +149,9 @@ if [ -f ~/.config/bash/xdgfix.sh ]; then
 fi
 
 # Source api keys
-if [ -f ~/.local/share/apikeys/api.sh ]; then
-    . ~/.local/share/apikeys/api.sh
-fi
+# if [ -f ~/.local/share/apikeys/api.sh ]; then
+#     . ~/.local/share/apikeys/api.sh
+# fi
 
 ##################################
 ####    aliases/functions     ####
