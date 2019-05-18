@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Lock Session
+Exec=loginctl lock-session
+Terminal=false
+Type=Application
+Icon=/home/zaayer/Documents/tresor/icons/apps/func_shutdown2.png
