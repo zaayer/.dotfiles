@@ -18,6 +18,8 @@ alias la="ls --color=always --group-directories-first -lAhv"
 alias ll="ls --color=always --group-directories-first -lh"
 alias l="ls --color=always --group-directories-first -1Av"
 
+alias mkdir="mkdir -pv"
+
 alias py="python3"
 alias py2="python2"
 alias py3="python3"

@@ -36,3 +36,10 @@ trd() {
         echo "tree not found in path."
     fi
 }
+
+yup() {
+    yay
+    yay -Yc
+    yay -Sc --noconfirm
+    rustup update
+}

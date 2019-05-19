@@ -49,9 +49,13 @@ reset="\e[0m"
 # white_bright_bg=";107m"
 
 # Used colors
+bluebold="\e[1;34m"
 cyanbold="\e[1;36m"
 greenbold="\e[1;32m"
+blackbold="\e[1;30m"
+black="\e[0;30m"
 redbold="\e[1;31m"
+dimred="\e[2;31m"
 reset="\e[0m"
 newline="\n"
 
@@ -60,7 +64,7 @@ __makePS1() {
     PS1="\[\n\]"
 
     # Insert path and then new line
-    PS1+="\[$cyanbold\]\[\w\]\[$reset\]\[$newline\]"
+    PS1+="\[$cyanbold\]\w \[$blackbold\]\h\[$reset\]\[\n\]"
 
     # Check if root, use bashism if possible for speed
     # else use id command for POSIX, which is slower
@@ -70,6 +74,8 @@ __makePS1() {
         PS1+="\[$redbold\]\[π\]\[$reset\] "
     fi
 }
+
+PS0="\[$reset\]"
 
 # Set the main prompt
 __makePS1

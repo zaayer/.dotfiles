@@ -8,5 +8,5 @@ if command -v neofetch &>/dev/null; then
 fi
 
 if command -v fortune &>/dev/null; then
-    echo -e "\e[0;33m$(fortune -sa)\n"
+    echo -e "\e[0;33m$(fortune -sa)\e[0m\n"
 fi
