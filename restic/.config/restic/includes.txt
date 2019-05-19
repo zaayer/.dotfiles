@@ -1,3 +1,5 @@
+/boot/loader/loader.conf
+/boot/loader/entries/arch.conf
 /etc/fstab
 /etc/group
 /etc/hosts
@@ -19,3 +21,4 @@
 /etc/xdg/user-dirs.defaults
 /usr/lib/systemd/user/restic-backup.service
 /usr/lib/systemd/user/restic-backup.timer
+/home/zaayer

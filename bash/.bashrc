@@ -50,6 +50,9 @@ shopt -s histappend
 # Save multi-line commands as one command
 shopt -s cmdhist
 
+# Record each line as it gets issued
+PROMPT_COMMAND='history -a'
+
 # Unlimited history
 HISTSIZE=-1
 HISTFILESIZE=-1
@@ -149,9 +152,9 @@ if [ -f ~/.config/bash/xdgfix.sh ]; then
 fi
 
 # Source api keys
-# if [ -f ~/.local/share/apikeys/api.sh ]; then
-#     . ~/.local/share/apikeys/api.sh
-# fi
+if [ -f ~/.local/share/apikeys/api.sh ]; then
+    . ~/.local/share/apikeys/api.sh
+fi
 
 ##################################
 ####    aliases/functions     ####
@@ -187,15 +190,11 @@ fi
 ####        set prompt        ####
 ##################################
 
-#if [[ -f ~/.config/bash/pureline.sh && -f ~/.config/bash/pureline.conf ]]; then
-#    . ~/.config/bash/pureline.sh ~/.config/bash/pureline.conf
 if [ -f ~/.config/bash/prompt.sh ]; then
     . ~/.config/bash/prompt.sh
 else
     PS1="➜ "
 fi
-
-PROMPT_COMMAND="$PROMPT_COMMAND; history -a"
 
 ##################################
 ####    run bash greeting     ####

@@ -20,8 +20,9 @@ RETENTION_MONTHS=18
 RETENTION_YEARS=3
 
 # Exclude and include files
-HOME_EXCLUDE="--exclude-file /home/zaayer/.config/restic/excludes.txt"
-ETC_INCLUDE="--files-from /home/zaayer/.config/restic/includes.txt"
+BACKUP_EXCLUDE="--exclude-file /home/zaayer/.config/restic/excludes.txt"
+BACKUP_INCLUDE="--files-from /home/zaayer/.config/restic/includes.txt"
+BACKUP_TAG="systemd"
 
 # Set all environment variables like
 # B2_ACCOUNT_ID, B2_ACCOUNT_KEY, RESTIC_REPOSITORY etc.
@@ -45,44 +46,25 @@ wait $!
 # --tag lets us reference these backups later when doing restic-forget.
 restic backup \
     --verbose \
-    --tag home \
+    --tag $BACKUP_TAG \
     --option b2.connections=$B2_CONNECTIONS \
-    $HOME_EXCLUDE \
-    /home/zaayer &
+    $BACKUP_INCLUDE \
+    $BACKUP_EXCLUDE &
 wait $!
 
-restic backup \
+# Dereference old backups.
+# See restic-forget(1) or http://restic.readthedocs.io/en/latest/060_forget.html
+# --group-by only the tag and path, and not by hostname. This is because I create a B2 Bucket per host, and if this hostname accidentially change some time, there would now be multiple backup sets.
+restic forget \
+    --prune \
+    --option b2.connections=$B2_CONNECTIONS \
     --verbose \
-    --tag modetc \
-    --option b2.connections=$B2_CONNECTIONS \
-    $ETC_INCLUDE &
+    --tag $BACKUP_TAG \
+    --group-by "paths,tags" \
+    --keep-daily $RETENTION_DAYS \
+    --keep-weekly $RETENTION_WEEKS \
+    --keep-monthly $RETENTION_MONTHS \
+    --keep-yearly $RETENTION_YEARS &
 wait $!
-
-restic backup \
-    --verbose \
-    --tag boot \
-    --option b2.connections=$B2_CONNECTIONS \
-    /boot &
-wait $!
-
-# # Dereference old backups.
-# # See restic-forget(1) or http://restic.readthedocs.io/en/latest/060_forget.html
-# # --group-by only the tag and path, and not by hostname. This is because I create a B2 Bucket per host, and if this hostname accidentially change some time, there would now be multiple backup sets.
-# restic forget \
-#     --verbose \
-#     --tag $BACKUP_TAG \
-#     --group-by "paths,tags" \
-#     --keep-daily $RETENTION_DAYS \
-#     --keep-weekly $RETENTION_WEEKS \
-#     --keep-monthly $RETENTION_MONTHS \
-#     --keep-yearly $RETENTION_YEARS &
-# wait $!
-
-# # Remove old data not linked anymore.
-# # See restic-prune(1) or http://restic.readthedocs.io/en/latest/060_forget.html
-# restic prune \
-#     --option b2.connections=$B2_CONNECTIONS \
-#     --verbose &
-# wait $!
 
 echo "Backup is done."

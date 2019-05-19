@@ -1,3 +1,8 @@
-.cache/*
-.config/chromium/*
-.config/chromium-back-ovfs/*
+/home/zaayer/.cache/*
+/home/zaayer/.config/chromium/*
+/home/zaayer/.config/chromium-back-ovfs/*
+/home/zaayer/.dotfiles/.git/*
+/home/zaayer/.local/share/TelegramDesktop/*
+/home/zaayer/.local/share/gvfs-metadata/*
+/home/zaayer/.local/share/tracker/*
+/home/zaayer/.local/share/tresorit/*
