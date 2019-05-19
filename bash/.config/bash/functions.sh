@@ -38,8 +38,8 @@ trd() {
 }
 
 yup() {
-    yay
-    yay -Yc
+    yay -Syu --noconfirm
+    yay -Yc --noconfirm
     yay -Sc --noconfirm
     rustup update
 }
