@@ -42,6 +42,7 @@
     dt = difftool
     st = status
     ca = !sh -c 'git add -A && git commit -m \"$1\"' -
+    cap = !sh -c 'git add -A && git commit -m \"$1\" && git push' -
     pa = "!git push; git push bitbucket; git push gitlab"
 [push]
     default = current
