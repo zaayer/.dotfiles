@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
 alias cat="bat"
 
 alias df="pydf"
@@ -19,6 +23,8 @@ alias ll="ls --color=always --group-directories-first -lh"
 alias l="ls --color=always --group-directories-first -1Av"
 
 alias mkdir="mkdir -pv"
+
+alias open="xdg-open"
 
 alias py="python3"
 alias py2="python2"
