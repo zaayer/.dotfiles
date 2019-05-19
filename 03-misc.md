@@ -55,6 +55,7 @@ psd
 nano $HOME/.config/psd/psd.conf
 ```
 > USE_OVERLAYFS="yes"
+>
 > BROWSERS="chromium"
 
 ```bash

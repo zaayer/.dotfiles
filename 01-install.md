@@ -144,6 +144,7 @@ Configure mkinitcpio
 nano /etc/mkinitcpio.conf
 ```
 > MODULES=(dm-raid raid0)
+>
 > HOOKS=(base systemd autodetect keyboard sd-vconsole modconf block sd-lvm2 filesystems)
 
 ```bash
@@ -177,10 +178,15 @@ Configure loader.conf
 nano /boot/loader/loader.conf
 ```
 > default arch
+>
 > timeout 5
+>
 > auto-entries 0
+>
 > auto-firmware 0
+>
 > console-mode max
+>
 > editor no
 
 Configure arch.conf
@@ -188,10 +194,14 @@ Configure arch.conf
 nano /boot/loader/entries/arch.conf
 ```
 > title Arch Linux
+>
 > linux /vmlinuz-linux
+>
 > initrd /intel-ucode.img
+>
 > initrd /initramfs-linux.img
-> options quiet splash loglevel=3 rd.systemd.show_status=auto rd.udev.log_priority=3 fsck.mode=skip nvme_core.default_ps_max_latency_us=0 vt.global_cursor_default=0 add_efi_memmap nowatchdog root=/dev/vg0/lvroot rootfstype=ext4
+>
+> options quiet splash loglevel=3 rd.udev.log_priority=3 vt.global_cursor_default=0 nowatchdog amdgpu.dc=1 root=/dev/vg0/lvroot
 
 ## Final steps
 

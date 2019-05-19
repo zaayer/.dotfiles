@@ -236,13 +236,16 @@ Setup nvim dein etc
 nvim
 ```
 > :call dein#install()
+>
 > :q
 
 ```bash
 nvim
 ```
 > :BlackUpgrade
+>
 > :UpdateRemotePlugins
+>
 > :q
 
 ## Rebuild and reboot
