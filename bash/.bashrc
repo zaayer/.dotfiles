@@ -85,7 +85,7 @@ shopt -s cdspell 2> /dev/null
 
 # This defines where cd looks for targets
 # Add the directories you want to have fast access to, separated by colon
-CDPATH="."
+# CDPATH="."
 
 # Define a variable containing a path and you will be able to cd into it
 # regardless of the directory you're in
