@@ -51,3 +51,5 @@ fff
 w3m
 fbset
 freetype2
+exfat-utils
+profile-cleaner

@@ -1,4 +1,3 @@
-fish
 ripgrep
 fd
 fzf
@@ -13,3 +12,6 @@ dash
 go
 tmux
 fortune-mod
+stow
+cmake
+bash-completion
