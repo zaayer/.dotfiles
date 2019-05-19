@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Only needed if not using stow
+
 . bootstrap/funcs.sh
 
 info "Prompting for sudo password..."
