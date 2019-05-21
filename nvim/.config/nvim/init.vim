@@ -191,7 +191,7 @@ set noshowmode
 """""""""""""""""""""""""""""""""""""""""""""""
 
 " Add VimLeave autocommand to reset cursor style
-" au VimLeave * set guicursor=a:hor100-blinkon1
+au VimLeave * set guicursor=a:block-blinkon1
 
 " Set utf8 as the standard encoding and en_US as language
 set encoding=utf8
