@@ -18,12 +18,21 @@ f() {
     cd "$(< ~/.cache/fff/fff.d)"
 }
 
+lowercase-directory() {
+    for file in *; do
+        local newfile=$(printf ${file,,})
+        if [ $file != $newfile ]; then
+            mv $file $(printf ${file,,})
+        fi
+    done
+}
+
 mkcd() {
     last=$(eval "echo \$$#")
     if [ ! -n "$last" ]; then
         echo "Enter a directory name"
     elif [ -d $last ]; then
-        echo "\`$last' already exists"
+        echo "'$last' already exists"
     else
         mkdir $@ && cd $last
     fi
