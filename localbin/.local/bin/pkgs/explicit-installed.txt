@@ -6,6 +6,7 @@
    0.02 MiB	pass-otp                                	A pass extension for managing one-time-password (OTP) tokens.
    0.02 MiB	xorg-sessreg                            	Register X sessions in system utmp/utmpx databases
    0.02 MiB	xorg-smproxy                            	Allows X applications that do not support X11R6 session management to participate in an X11R6 session
+   0.03 MiB	chrome-gnome-shell                      	Native browser connector for integration with extensions.gnome.org
    0.03 MiB	jp2a                                    	A small utility for converting JPG images to ASCII
    0.03 MiB	pydf                                    	A colorized df clone
    0.03 MiB	xorg-xcmsdb                             	Device Color Characterization utility for X Color Management System
@@ -135,9 +136,10 @@
    3.95 MiB	ttf-ubuntu-font-family                  	Ubuntu font family
    4.24 MiB	gnome-keyring                           	Stores passwords and encryption keys
    4.34 MiB	fortune-mod                             	The Fortune Cookie Program from BSD games
+   4.41 MiB	materia-gtk-theme                       	A Material Design theme for GNOME/GTK+ based desktop environments
+   4.47 MiB	bat                                     	Cat clone with syntax highlighting and git integration
    4.49 MiB	mpv                                     	a free, open source, and cross-platform media player
    4.68 MiB	ripgrep                                 	A search tool that combines the usability of ag with the raw speed of grep
-   4.74 MiB	bat                                     	Cat clone with syntax highlighting and git integration
    4.74 MiB	openssh                                 	Premier connectivity tool for remote login with the SSH protocol
    4.80 MiB	gnome-settings-daemon                   	GNOME Settings Daemon
    5.09 MiB	qt5-wayland                             	Provides APIs for Wayland
@@ -149,10 +151,11 @@
    6.26 MiB	p7zip                                   	Command-line file archiver with high compression ratio
    6.42 MiB	mesa-vdpau                              	Mesa VDPAU drivers
    6.78 MiB	tracker                                 	Desktop-neutral user information store, search tool and indexer
+   7.15 MiB	gnome-terminal                          	The GNOME Terminal Emulator
    7.40 MiB	arc-solid-gtk-theme                     	A flat theme for GTK 3, GTK 2 and Gnome-Shell (without transparency)
    7.41 MiB	arc-gtk-theme                           	A flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Shell
    8.62 MiB	gnome-shell                             	Next generation desktop shell
-  10.17 MiB	imagemagick                             	An image viewing/manipulation program
+  10.15 MiB	imagemagick                             	An image viewing/manipulation program
   10.26 MiB	fish                                    	Smart and user friendly shell intended mostly for interactive use
   10.46 MiB	eog                                     	Eye of Gnome: An image viewing and cataloging program
   10.67 MiB	xorg-fonts-75dpi                        	X.org 75dpi fonts
@@ -183,7 +186,8 @@
   46.33 MiB	telegram-desktop                        	Official Telegram Desktop client
   49.97 MiB	mesa                                    	An open-source implementation of the OpenGL specification
   62.50 MiB	papirus-icon-theme                      	Papirus icon theme
+  98.78 MiB	pypy3                                   	A Python3 implementation written in Python, JIT enabled
  147.77 MiB	virtualbox                              	Powerful x86 virtualization for enterprise as well as home use
  170.98 MiB	docker                                  	Pack, ship and run any application as a lightweight container
- 171.05 MiB	chromium                                	A web browser built for speed, simplicity, and security
+ 171.04 MiB	chromium                                	A web browser built for speed, simplicity, and security
  476.06 MiB	go                                      	Core compiler tools for the Go programming language
