@@ -6,16 +6,21 @@
 	"installed_packages":
 	[
 		"Charcoal",
+		"Code Color",
 		"Dockerfile Syntax Highlighting",
-		"Duotones Colorschemes",
 		"fish",
 		"Generic Config",
+		"Guna",
+		"Meetio",
 		"NimLime",
 		"Package Control",
 		"SideBarEnhancements",
 		"sublack",
 		"SublimeLinter",
 		"SublimeLinter-flake8",
+		"Theme - DAneo",
+		"Theme - Gravity",
+		"Theme - Minimist",
 		"VimL"
 	]
 }
