@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # # Reset variable
-reset="\e[0m"
+# reset="\e[0m"
 
 # # Define font settings
 # normal="\e[0"
@@ -12,7 +12,7 @@ reset="\e[0m"
 # blink="\e[5"
 # reverse="\e[7"
 
-# # Define text colors
+# # Define text colors, add 10 for background colors
 # black_fg=";30m"
 # red_fg=";31m"
 # green_fg=";32m"
@@ -30,34 +30,13 @@ reset="\e[0m"
 # cyan_bright_fg=";96m"
 # white_bright_fg=";97m"
 
-# # Define background colors
-# black_bg=";40m"
-# red_bg=";41m"
-# green_bg=";42m"
-# yellow_bg=";43m"
-# blue_bg=";44m"
-# magenta_bg=";45m"
-# cyan_bg=";46m"
-# white_bg=";47m"
-# black_bright_bg=";100m"
-# red_bright_bg=";101m"
-# green_bright_bg=";102m"
-# yellow_bright_bg=";103m"
-# blue_bright_bg=";104m"
-# magenta_bright_bg=";105m"
-# cyan_bright_bg=";106m"
-# white_bright_bg=";107m"
-
 # Used colors
-bluebold="\e[1;34m"
-cyanbold="\e[1;36m"
-greenbold="\e[1;32m"
 blackbold="\e[1;30m"
-black="\e[0;30m"
 redbold="\e[1;31m"
-dimred="\e[2;31m"
+greenbold="\e[1;32m"
+yellowbold="\e[1;33m"
+cyanbold="\e[1;36m"
 reset="\e[0m"
-newline="\n"
 
 __makePS1() {
     # Start with a line separator from last output
@@ -81,4 +60,12 @@ PS0="\[$reset\]"
 __makePS1
 
 # Set the continuation prompt
-PS2="\[\e[1;33m\]...\[\e[0m\] "
+PS2="\[$yellowbold\]...\[$reset\] "
+
+# Unset variables
+unset blackbold
+unset redbold
+unset greenbold
+unset yellowbold
+unset cyanbold
+unset reset
