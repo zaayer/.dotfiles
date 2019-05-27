@@ -61,12 +61,15 @@ __makePS1() {
     # Start with a line separator from last output
     PS1="\[\n\]"
 
+    # Host and CWD
+    PS1+="\[$whitebold\][\[$yellowbold\]\h \[$cyanbold\]\W\[$whitebold\]]\[$reset\]"
+
     # Check if root, use bashism if possible for speed
     # else use id command for POSIX, which is slower
     if ((${EUID:-0} || "$(id -u)")); then
-        PS1+="[\[$yellowbold\]\h\[$whitebold\]:\[$cyanbold\]\W\[$reset\]]\[$greenbold\]\[$\]\[$reset\] "
+        PS1+="\[$greenbold\]\[$\]\[$reset\] "
     else
-        PS1+="[\[$yellowbold\]\h\[$whitebold\]:\[$cyanbold\]\W\[$reset\]]\[$redbold\]\[#\]\[$reset\] "
+        PS1+="\[$redbold\]\[#\]\[$reset\] "
     fi
 }
 

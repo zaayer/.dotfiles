@@ -139,10 +139,10 @@ set background=dark
 "let g:lightline.colorscheme = 'nord'
 
 " OCEANIC NEXT
-let g:oceanic_next_terminal_bold = 1
-let g:oceanic_next_terminal_italic = 1
-colorscheme OceanicNext
-let g:lightline.colorscheme = 'oceanicnext'
+"let g:oceanic_next_terminal_bold = 1
+"let g:oceanic_next_terminal_italic = 1
+"colorscheme OceanicNext
+"let g:lightline.colorscheme = 'oceanicnext'
 
 "" ONE DARK
 "let g:onedark_terminal_italics = 1
@@ -169,10 +169,10 @@ let g:lightline.colorscheme = 'oceanicnext'
 "let g:lightline.colorscheme = 'neodark'
 
 " QUANTUM
-"let g:quantum_black = 1 "0 for standard quantum
-"let g:quantum_italics = 1
-"colorscheme quantum
-"let g:lightline.colorscheme = 'quantum'
+let g:quantum_black = 1 "0 for standard quantum
+let g:quantum_italics = 1
+colorscheme quantum
+let g:lightline.colorscheme = 'quantum'
 
 " BASE 16 VIM
 " Enable italic comments in base16 themes
