@@ -28,7 +28,7 @@ if dein#load_state('~/.local/share/dein')
     call dein#add('sheerun/vim-polyglot')
 
     " Add my favorite colorschemes
-    "call dein#add('junegunn/seoul256.vim')
+    call dein#add('junegunn/seoul256.vim')
     call dein#add('arcticicestudio/nord-vim')
     call dein#add('mhartington/oceanic-next')
     call dein#add('joshdick/onedark.vim')
@@ -139,16 +139,21 @@ set background=dark
 "let g:lightline.colorscheme = 'nord'
 
 " OCEANIC NEXT
-"let g:oceanic_next_terminal_bold = 1
-"let g:oceanic_next_terminal_italic = 1
-"colorscheme OceanicNext
-"let g:lightline.colorscheme = 'oceanicnext'
+let g:oceanic_next_terminal_bold = 1
+let g:oceanic_next_terminal_italic = 1
+colorscheme OceanicNext
+let g:lightline.colorscheme = 'oceanicnext'
 
 "" ONE DARK
-let g:onedark_terminal_italics = 1
-let g:onedark_hide_endofbuffer = 1
-colorscheme onedark
-let g:lightline.colorscheme = 'onedark'
+"let g:onedark_terminal_italics = 1
+"let g:onedark_hide_endofbuffer = 1
+"colorscheme onedark
+"let g:lightline.colorscheme = 'onedark'
+
+"" SEOUL256
+"colorscheme seoul256
+"let g:seoul256_background = 235
+"let g:lightline.colorscheme = 'seoul256'
 
 " MATERIAL PALE NIGHT
 "let g:palenight_terminal_italics = 1
@@ -156,7 +161,7 @@ let g:lightline.colorscheme = 'onedark'
 "let g:lightline.colorscheme = 'palenight'
 
 " NEODARK
-"let g:neodark#background = '#202020' "optional
+"let g:neodark#background = '#262626' "optional
 "let g:neodark#use_256color = 0 "0 for true color
 "let g:neodark#terminal_transparent = 1 "1 means use terminal background
 "let g:neodark#solid_vertsplit = 1 "1 to get solid vertical split matching status line

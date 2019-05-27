@@ -35,22 +35,38 @@ blackbold="\e[1;30m"
 redbold="\e[1;31m"
 greenbold="\e[1;32m"
 yellowbold="\e[1;33m"
+bluebold="\e[1;34m"
+magentabold="\e[1;35m"
 cyanbold="\e[1;36m"
+whitebold="\e[1;37m"
 reset="\e[0m"
+
+__makePS1_two() {
+    # Start with a line separator from last output
+    PS1="\[\n\]"
+
+    # Insert path and then new line
+    PS1+="\[$cyanbold\]\w\[\n\]"
+
+    # Check if root, use bashism if possible for speed
+    # else use id command for POSIX, which is slower
+    if ((${EUID:-0} || "$(id -u)")); then
+        PS1+="\[$greenbold\]\[$\]\[$reset\] "
+    else
+        PS1+="\[$redbold\]\[#\]\[$reset\] "
+    fi
+}
 
 __makePS1() {
     # Start with a line separator from last output
     PS1="\[\n\]"
 
-    # Insert path and then new line
-    PS1+="\[$cyanbold\]\w \[$blackbold\]\h\[$reset\]\[\n\]"
-
     # Check if root, use bashism if possible for speed
     # else use id command for POSIX, which is slower
     if ((${EUID:-0} || "$(id -u)")); then
-        PS1+="\[$greenbold\]\[λ\]\[$reset\] "
+        PS1+="[\[$yellowbold\]\h\[$whitebold\]:\[$cyanbold\]\W\[$reset\]]\[$greenbold\]\[$\]\[$reset\] "
     else
-        PS1+="\[$redbold\]\[π\]\[$reset\] "
+        PS1+="[\[$yellowbold\]\h\[$whitebold\]:\[$cyanbold\]\W\[$reset\]]\[$redbold\]\[#\]\[$reset\] "
     fi
 }
 
@@ -67,5 +83,8 @@ unset blackbold
 unset redbold
 unset greenbold
 unset yellowbold
+unset bluebold
+unset magentabold
 unset cyanbold
+unset whitebold
 unset reset
