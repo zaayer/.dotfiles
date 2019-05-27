@@ -13,9 +13,15 @@ LABEL=EFI      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage
 # /dev/nvme0n1p2 LABEL=swp
 LABEL=swp	none      	swap      	defaults  	0 0
 
-tmpfs /home/zaayer/.cache/chromium tmpfs rw,noatime,size=1G,nr_inodes=5k,noexec,nodev,nosuid,uid=zaayer,gid=zaayer,mode=1700 0 0
-tmpfs /home/zaayer/.config/kiibohd-configurator/Cache tmpfs rw,noatime,size=1G,nr_inodes=5k,noexec,nodev,nosuid,uid=zaayer,gid=zaayer,mode=1700 0 0
-tmpfs /home/zaayer/.local/share/docker-machine/cache tmpfs rw,noatime,size=1G,nr_inodes=5k,noexec,nodev,nosuid,uid=zaayer,gid=zaayer,mode=1700 0 0
+# tmpfs mounts
+tmpfs /home/zaayer/.cache/yay tmpfs rw,noatime,size=1G,nr_inodes=5k,noexec,nodev,nosuid,uid=zaayer,gid=zaayer,mode=1700 0 0
 
-# tmpfs /home/zaayer/.cache/mozilla tmpfs rw,noatime,size=1G,nr_inodes=5k,noexec,nodev,nosuid,uid=zaayer,gid=zaayer,mode=1700 0 0
-# tmpfs /home/zaayer/.cache/opera tmpfs rw,noatime,size=1G,nr_inodes=5k,noexec,nodev,nosuid,uid=zaayer,gid=zaayer,mode=1700 0 0
+tmpfs /home/zaayer/.cache/chromium tmpfs rw,noatime,size=1G,nr_inodes=5k,noexec,nodev,nosuid,uid=zaayer,gid=zaayer,mode=1700 0 0
+
+tmpfs /home/zaayer/.config/kiibohd-configurator/Cache tmpfs rw,noatime,size=1G,nr_inodes=5k,noexec,nodev,nosuid,uid=zaayer,gid=zaayer,mode=1700 0 0
+
+tmpfs /home/zaayer/.cache/Tresorit tmpfs rw,noatime,size=1G,nr_inodes=5k,noexec,nodev,nosuid,uid=zaayer,gid=zaayer,mode=1700 0 0
+
+tmpfs /home/zaayer/.cache/jedi tmpfs rw,noatime,size=1G,nr_inodes=5k,noexec,nodev,nosuid,uid=zaayer,gid=zaayer,mode=1700 0 0
+
+# tmpfs /home/zaayer/.local/share/docker-machine/cache tmpfs rw,noatime,size=1G,nr_inodes=5k,noexec,nodev,nosuid,uid=zaayer,gid=zaayer,mode=1700 0 0

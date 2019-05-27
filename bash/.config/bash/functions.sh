@@ -38,6 +38,21 @@ mkcd() {
     fi
 }
 
+pyenv() {
+    local command
+    command="${1:-}"
+    if [ "$#" -gt 0 ]; then
+        shift
+    fi
+
+    case "$command" in
+    rehash|shell)
+        eval "$(pyenv "sh-$command" "$@")";;
+    *)
+        command pyenv "$command" "$@";;
+    esac
+}
+
 trd() {
     if command -v tree &>/dev/null; then
         command tree -Cd $@
@@ -47,7 +62,7 @@ trd() {
 }
 
 yup() {
-    yay -Syu --noconfirm
+    yay -Syu
     yay -Yc --noconfirm
     yay -Sc --noconfirm
     rustup update

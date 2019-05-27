@@ -143,6 +143,14 @@ if [ -x /usr/bin/lesspipe.sh ]; then
     export LESS_ADVANCED_PREPROCESSOR=1
 fi
 
+# Options for pyenv
+export PYENV_ROOT="$XDG_DATA_HOME/pyenv"
+export PYENV_SHELL=bash
+if command -v pyenv 1>/dev/null 2>&1; then
+    command pyenv rehash 2>/dev/null
+fi
+
+
 # Tab complete sudo commands
 complete -cf sudo
 
@@ -169,22 +177,13 @@ if [ -f ~/.config/bash/functions.sh ]; then
 fi
 
 ##################################
-####       completions        ####
-##################################
-
-if [[ -f /usr/share/fzf/completion.bash && \
-    ! -f ~/.local/share/bash-completion/completions/fzf.sh ]]; then
-    ln -s /usr/share/fzf/completion.bash \
-          ~/.local/share/bash-completion/completions/fzf.sh
-fi
-
-##################################
 ####      update path         ####
 ##################################
 
-[[ -d $CARGO_HOME/bin ]] && PATH+=":$CARGO_HOME/bin"
-[[ -d $GOPATH/bin ]] && PATH+=":$GOPATH/bin"
-[[ -d $HOME/.local/bin ]] && PATH+=":$HOME/.local/bin"
+# [[ -d $CARGO_HOME/bin ]] && PATH="$CARGO_HOME/bin:${PATH}"
+[[ -d $GOPATH/bin ]] && PATH="$GOPATH/bin:${PATH}"
+[[ -d $HOME/.local/bin ]] && PATH="$HOME/.local/bin:${PATH}"
+[[ -d $PYENV_ROOT/shims ]] && PATH="$PYENV_ROOT/shims:${PATH}"
 
 ##################################
 ####        set prompt        ####

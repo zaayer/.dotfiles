@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
-export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export GOPATH="$XDG_DATA_HOME/go"
 export GOCACHE="$XDG_CACHE_HOME/go"
@@ -9,9 +8,10 @@ export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 export DOCKER_CONFIG="$XDG_CONFIG_HOME/docker"
 export MACHINE_STORAGE_PATH="$XDG_DATA_HOME/docker-machine"
 export PASSWORD_STORE_DIR="$XDG_DATA_HOME/pass"
-export PIPENV_VENV_IN_PROJECT=1
-export PIP_CONFIG_FILE="$XDG_CONFIG_HOME/pip/pip.conf"
 export PYLINTHOME="$XDG_CACHE_HOME/pylint"
+export PIP_CONFIG_FILE="$XDG_CONFIG_HOME/pip/pip.conf"
+# export CARGO_HOME="$XDG_DATA_HOME/cargo"
+# export PIPENV_VENV_IN_PROJECT=1
 # export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 # export NPM_CONFIG_PREFIX="$XDG_DATA_HOME/npm"
 # export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/npm"

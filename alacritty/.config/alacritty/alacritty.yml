@@ -94,7 +94,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux) monospace
     #   - (Windows) Consolas
-    family: Roboto Mono
+    family: Iosevka
 
     # The `style` can be specified to pick a specific face.
     # style: Medium
@@ -122,13 +122,13 @@ font:
     # style: Medium Italic
 
   # Point size
-  size: 9
+  size: 10
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: 0
-    y: 3
+    y: 0
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
