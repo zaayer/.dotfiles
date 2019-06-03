@@ -8,12 +8,13 @@
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"fold_buttons": false,
-	"font_face": "Iosevka Medium",
+	"font_face": "SF Mono Medium",
 	"font_options":
 	[
-		"dlig"
+		"dlig",
+		"no_italic"
 	],
-	"font_size": 11,
+	"font_size": 10,
 	"highlight_line": true,
 	"ignored_packages":
 	[

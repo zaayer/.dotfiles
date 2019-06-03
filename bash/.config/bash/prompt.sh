@@ -53,7 +53,7 @@ __makePS1_two() {
     if ((${EUID:-0} || "$(id -u)")); then
         PS1+="\[$greenbold\]\[$\]\[$reset\] "
     else
-        PS1+="\[$redbold\]\[#\]\[$reset\] "
+        PS1+="\[$redbold\]\[@\]\[$reset\] "
     fi
 }
 
@@ -69,7 +69,7 @@ __makePS1() {
     if ((${EUID:-0} || "$(id -u)")); then
         PS1+="\[$greenbold\]\[$\]\[$reset\] "
     else
-        PS1+="\[$redbold\]\[#\]\[$reset\] "
+        PS1+="\[$redbold\]\[@\]\[$reset\] "
     fi
 }
 
@@ -91,3 +91,5 @@ unset magentabold
 unset cyanbold
 unset whitebold
 unset reset
+unset __makePS1
+unset __makePS1_two

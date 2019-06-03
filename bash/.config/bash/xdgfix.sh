@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export GOPATH="$XDG_DATA_HOME/go"
 export GOCACHE="$XDG_CACHE_HOME/go"
@@ -11,8 +12,6 @@ export PASSWORD_STORE_DIR="$XDG_DATA_HOME/pass"
 export PYLINTHOME="$XDG_CACHE_HOME/pylint"
 export PIP_CONFIG_FILE="$XDG_CONFIG_HOME/pip/pip.conf"
 export PARALLEL_HOME="$XDG_CONFIG_HOME/parallel"
-# export CARGO_HOME="$XDG_DATA_HOME/cargo"
-# export PIPENV_VENV_IN_PROJECT=1
 # export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 # export NPM_CONFIG_PREFIX="$XDG_DATA_HOME/npm"
 # export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/npm"
@@ -22,6 +21,4 @@ export PARALLEL_HOME="$XDG_CONFIG_HOME/parallel"
 # export GEMRC="$XDG_CONFIG_HOME/gem/gemrc"
 # export RBENV_ROOT="$XDG_DATA_HOME/rbenv"
 # export STACK_ROOT="$XDG_DATA_HOME/stack"
-# export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
-# export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 # export _JAVA_OPTIONS="Djava.util.prefs.userRoot=$XDG_CONFIG_HOME/java"
