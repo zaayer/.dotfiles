@@ -45,8 +45,8 @@ __makePS1_two() {
     # Start with a line separator from last output
     PS1="\[\n\]"
 
-    # Insert path and then new line
-    PS1+="\[$cyanbold\]\w\[\n\]"
+    # Insert path, host, and new line
+    PS1+="\[$cyanbold\]\w \[$blackbold\](\h)\[$reset\]\[\n\]"
 
     # Check if root, use bashism if possible for speed
     # else use id command for POSIX, which is slower
@@ -76,7 +76,7 @@ __makePS1() {
 PS0="\[$reset\]"
 
 # Set the main prompt
-__makePS1
+__makePS1_two
 
 # Set the continuation prompt
 PS2="\[$yellowbold\]...\[$reset\] "

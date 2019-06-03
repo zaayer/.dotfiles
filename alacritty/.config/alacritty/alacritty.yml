@@ -94,7 +94,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux) monospace
     #   - (Windows) Consolas
-    family: Iosevka
+    family: Iosevka Slab
 
     # The `style` can be specified to pick a specific face.
     # style: Medium
@@ -162,39 +162,82 @@ persistent_logging: false
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
 
-# Colors (Quantum)
+# Base16 Eighties 256 - alacritty color config
+# Chris Kempson (http://chriskempson.com)
 colors:
   # Default colors
   primary:
-    background: '0x212121'
-    foreground: '0xb7bdc0'
+    background: '0x2d2d2d'
+    foreground: '0xd3d0c8'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x212121'
-    cursor: '0xffffff'
+    text: '0x2d2d2d'
+    cursor: '0xd3d0c8'
 
   # Normal colors
   normal:
-    black:   '0x474646'
-    red:     '0xdd7186'
-    green:   '0x87bb7c'
-    yellow:  '0xd5b875'
-    blue:    '0x70ace5'
-    magenta: '0xa48add'
-    cyan:    '0x69c5ce'
-    white:   '0xb7bdc0'
+    black:   '0x2d2d2d'
+    red:     '0xf2777a'
+    green:   '0x99cc99'
+    yellow:  '0xffcc66'
+    blue:    '0x6699cc'
+    magenta: '0xcc99cc'
+    cyan:    '0x66cccc'
+    white:   '0xd3d0c8'
 
   # Bright colors
   bright:
-    black:   '0x474646'
-    red:     '0xe15a60'
-    green:   '0x99c794'
-    yellow:  '0xfac863'
+    black:   '0x747369'
+    red:     '0xf2777a'
+    green:   '0x99cc99'
+    yellow:  '0xffcc66'
     blue:    '0x6699cc'
-    magenta: '0xc594c5'
-    cyan:    '0x5fb3b3'
-    white:   '0xb7bdc0'
+    magenta: '0xcc99cc'
+    cyan:    '0x66cccc'
+    white:   '0xf2f0ec'
+
+  indexed_colors:
+    - { index: 16, color: '0xf99157' }
+    - { index: 17, color: '0xd27b53' }
+    - { index: 18, color: '0x393939' }
+    - { index: 19, color: '0x515151' }
+    - { index: 20, color: '0xa09f93' }
+    - { index: 21, color: '0xe8e6df' }
+
+# # Colors (Quantum)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0x212121'
+#     foreground: '0xb7bdc0'
+
+#   # Colors the cursor will use if `custom_cursor_colors` is true
+#   cursor:
+#     text: '0x212121'
+#     cursor: '0xffffff'
+
+#   # Normal colors
+#   normal:
+#     black:   '0x474646'
+#     red:     '0xdd7186'
+#     green:   '0x87bb7c'
+#     yellow:  '0xd5b875'
+#     blue:    '0x70ace5'
+#     magenta: '0xa48add'
+#     cyan:    '0x69c5ce'
+#     white:   '0xb7bdc0'
+
+#   # Bright colors
+#   bright:
+#     black:   '0x474646'
+#     red:     '0xe15a60'
+#     green:   '0x99c794'
+#     yellow:  '0xfac863'
+#     blue:    '0x6699cc'
+#     magenta: '0xc594c5'
+#     cyan:    '0x5fb3b3'
+#     white:   '0xb7bdc0'
 
 # # Colors (Oceanic Next)
 # colors:

@@ -10,6 +10,7 @@ export MACHINE_STORAGE_PATH="$XDG_DATA_HOME/docker-machine"
 export PASSWORD_STORE_DIR="$XDG_DATA_HOME/pass"
 export PYLINTHOME="$XDG_CACHE_HOME/pylint"
 export PIP_CONFIG_FILE="$XDG_CONFIG_HOME/pip/pip.conf"
+export PARALLEL_HOME="$XDG_CONFIG_HOME/parallel"
 # export CARGO_HOME="$XDG_DATA_HOME/cargo"
 # export PIPENV_VENV_IN_PROJECT=1
 # export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"

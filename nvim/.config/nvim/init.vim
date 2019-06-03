@@ -169,20 +169,16 @@ set background=dark
 "let g:lightline.colorscheme = 'neodark'
 
 " QUANTUM
-let g:quantum_black = 1 "0 for standard quantum
-let g:quantum_italics = 1
-colorscheme quantum
-let g:lightline.colorscheme = 'quantum'
+"let g:quantum_black = 1 "0 for standard quantum
+"let g:quantum_italics = 1
+"colorscheme quantum
+"let g:lightline.colorscheme = 'quantum'
 
 " BASE 16 VIM
 " Enable italic comments in base16 themes
-"let base16colorspace=256
-"colorscheme base16-material-darker
-"augroup on_change_colorschema
-"  autocmd!
-"  autocmd ColorScheme * call s:base16_customize()
-"augroup END
-"let g:lightline.colorscheme = 'spacemacs'
+let base16colorspace=256
+colorscheme base16-eighties
+let g:lightline.colorscheme = 'Tomorrow_Night_Eighties'
 
 " Enable syntax highlighting
 syntax enable
