@@ -180,7 +180,7 @@ fi
 ####      update path         ####
 ##################################
 
-# [[ -d $CARGO_HOME/bin ]] && PATH="$CARGO_HOME/bin:${PATH}"
+[[ -d $CARGO_HOME/bin ]] && PATH="$CARGO_HOME/bin:${PATH}"
 [[ -d $GOPATH/bin ]] && PATH="$GOPATH/bin:${PATH}"
 [[ -d $HOME/.local/bin ]] && PATH="$HOME/.local/bin:${PATH}"
 [[ -d $PYENV_ROOT/shims ]] && PATH="$PYENV_ROOT/shims:${PATH}"
