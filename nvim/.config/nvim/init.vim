@@ -221,6 +221,10 @@ set noswapfile
 set ai
 set si
 
+" Disable modelines
+set modelines=0
+set nomodeline
+
 " Use a map leader to do extra key commands
 let mapleader = ","
 

@@ -61,7 +61,7 @@ HISTFILESIZE=-1
 HISTCONTROL='erasedups:ignoreboth'
 
 # Don't record some commands
-HISTIGNORE="&:[ ]*:exit:ls:la:ll:l:cd:bg:fg:history:clear"
+HISTIGNORE="&:[ ]*:exit:ls:la:ll:l:cd:bg:fg:history:clear:pass*:gopass*:top:htop:gotop:youtube-dl*"
 
 # Use standard ISO 8601 timestamp
 # %F equivalent to %Y-%m-%d
