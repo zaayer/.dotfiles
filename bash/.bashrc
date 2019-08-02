@@ -150,6 +150,8 @@ if command -v pyenv 1>/dev/null 2>&1; then
     command pyenv rehash 2>/dev/null
 fi
 
+# Location of VSCode
+export CODE_HOME="$HOME/.local/bin/vscode"
 
 # Tab complete sudo commands
 complete -cf sudo
@@ -184,6 +186,7 @@ fi
 [[ -d $GOPATH/bin ]] && PATH="$GOPATH/bin:${PATH}"
 [[ -d $HOME/.local/bin ]] && PATH="$HOME/.local/bin:${PATH}"
 [[ -d $PYENV_ROOT/shims ]] && PATH="$PYENV_ROOT/shims:${PATH}"
+[[ -d $CODE_HOME ]] && PATH="$CODE_HOME:${PATH}"
 
 ##################################
 ####        set prompt        ####
