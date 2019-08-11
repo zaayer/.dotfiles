@@ -61,7 +61,7 @@ HISTFILESIZE=-1
 HISTCONTROL='erasedups:ignoreboth'
 
 # Don't record some commands
-HISTIGNORE="&:[ ]*:exit:ls:la:ll:l:cd:bg:fg:history:clear:pass*:gopass*:top:htop:gotop:youtube-dl*"
+HISTIGNORE="&:[ ]*:exit:ls:la:ll:l:cd:bg:fg:history:clear:pass*:gopass*:top:htop:gotop:youtube-dl*:kitty*"
 
 # Use standard ISO 8601 timestamp
 # %F equivalent to %Y-%m-%d
@@ -155,6 +155,11 @@ export CODE_HOME="$HOME/.local/bin/vscode"
 
 # Tab complete sudo commands
 complete -cf sudo
+
+# Source kitty tab-completion
+if command -v kitty 1>/dev/null 2>&1; then
+    source <(kitty + complete setup bash)
+fi
 
 # Fixes for XDG structure for certain programs
 if [ -f ~/.config/bash/xdgfix.sh ]; then
