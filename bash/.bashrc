@@ -57,8 +57,9 @@ PROMPT_COMMAND='history -a'
 HISTSIZE=-1
 HISTFILESIZE=-1
 
-# Avoid duplicate entries
-HISTCONTROL='erasedups:ignoreboth'
+# Avoid duplicate entries, ignoredups handled by first two
+# patterns in HISTIGNORE
+HISTCONTROL="erasedups"
 
 # Don't record some commands
 HISTIGNORE="&:[ ]*:exit:ls:la:ll:l:cd:bg:fg:history:clear:pass*:gopass*:top:htop:gotop:youtube-dl*:kitty*"

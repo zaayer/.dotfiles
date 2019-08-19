@@ -73,8 +73,6 @@ __makePS1() {
     fi
 }
 
-PS0="\[$reset\]"
-
 # Set the main prompt
 __makePS1_two
 
