@@ -2,7 +2,7 @@
 
 ## Initial commands
 
-Enable NTP time synchronization (note: this will affect Windows installs as well)
+Enable NTP time synchronization (note: this will affect Windows side-by-side installs as well)
 
 ```bash
 timedatectl set-ntp true

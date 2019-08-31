@@ -2,6 +2,7 @@
     name = Kyle Rooker
     email = rookerka@gmail.com
     username = zaayer
+	singingkey = 32E399E5BE1B2AFD
 [color]
     diff = auto
     status = auto
@@ -51,3 +52,5 @@
     smudge = git-lfs smudge -- %f
     process = git-lfs filter-process
     required = true
+[commit]
+	gpgsign = true
