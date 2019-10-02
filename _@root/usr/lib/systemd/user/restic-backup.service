@@ -1,0 +1,7 @@
+[Unit]
+Description=Backup with restic to Backblaze B2
+
+[Service]
+Type=simple
+Nice=10
+ExecStart=/home/zaayer/.local/bin/restic-backup.sh
