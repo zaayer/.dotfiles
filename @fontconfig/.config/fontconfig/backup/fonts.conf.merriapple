@@ -5,7 +5,7 @@
     <!-- Set preferred serif, sans serif, and monospace fonts. -->
     <alias>
         <family>serif</family>
-        <prefer><family>New York Small</family></prefer>
+        <prefer><family>Merriweather</family></prefer>
     </alias>
     <alias>
         <family>sans-serif</family>
@@ -54,13 +54,13 @@
     <match>
         <test name="family"><string>Times New Roman</string></test>
         <edit name="family" mode="assign" binding="strong">
-            <string>New York Small</string>
+            <string>Merriweather</string>
         </edit>
     </match>
     <match>
         <test name="family"><string>Times</string></test>
         <edit name="family" mode="assign" binding="strong">
-            <string>New York Small</string>
+            <string>Merriweather</string>
         </edit>
     </match>
     <match>

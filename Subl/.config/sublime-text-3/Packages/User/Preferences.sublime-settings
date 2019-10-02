@@ -4,12 +4,12 @@
 	"black_on_save": true,
 	"caret_extra_width": 3,
 	"caret_style": "phase",
-	"color_scheme": "Packages/DA CS/Monokai Pro.tmTheme",
+	"color_scheme": "Packages/DA CS/Nord.tmTheme",
 	"draw_white_space": "selection",
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"fold_buttons": false,
-	"font_face": "Noto Sans Mono",
+	"font_face": "Cascadia Code",
 	"font_options":
 	[
 		"dlig",
