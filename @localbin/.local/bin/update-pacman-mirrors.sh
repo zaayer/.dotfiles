@@ -10,9 +10,9 @@ rankmirrors -n 5 - | \
 sudo tee /etc/pacman.d/mirrorlist > /dev/null
 
 
-if [ -d "$HOME/.dotfiles/root/etc/pacman.d" ]; then
-    if [ -e "$HOME/.dotfiles/root/etc/pacman.d/mirrorlist" ]; then
-        cp $HOME/.dotfiles/root/etc/pacman.d/mirrorlist $HOME/.dotfiles/root/etc/pacman.d/mirrorlist.backup
+if [ -d "$HOME/.dotfiles/_@root/etc/pacman.d" ]; then
+    if [ -e "$HOME/.dotfiles/_@root/etc/pacman.d/mirrorlist" ]; then
+        cp $HOME/.dotfiles/_@root/etc/pacman.d/mirrorlist $HOME/.dotfiles/_@root/etc/pacman.d/mirrorlist.backup
     fi
-    cp /etc/pacman.d/mirrorlist $HOME/.dotfiles/root/etc/pacman.d/mirrorlist
+    cp /etc/pacman.d/mirrorlist $HOME/.dotfiles/_@root/etc/pacman.d/mirrorlist
 fi
