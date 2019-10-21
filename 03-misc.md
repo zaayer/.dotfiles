@@ -72,6 +72,20 @@ General desktop (work in progress)
 yay -S gthumb libraw libchamplain evince file-roller gdm gnome-backgrounds gnome-calculator gnome-clocks gnome-characters gnome-control-center gnome-font-viewer gnome-keyring gnome-menus gnome-screenshot gnome-session gnome-settings-daemon gnome-shell mutter nautilus sushi tracker xdg-user-dirs-gtk gnome-logs gnome-tweaks alacarte gnome-shell-extensions gnome-shell-extension-dash-to-dock dconf-editor chrome-gnome-shell ffmpegthumbnailer gst-libav
 ```
 
+Other extensions from extensions.gnome.org
+- Install
+    - No Symbolic Icons
+    - Status Area Horizontal Spacing
+    - KStatusNotifierItem/AppIndicator Support
+
+Enhancements to Papirus
+```bash
+yay -S papirus-folders-git hardcode-tray
+papirus-folders -C cyan --theme Papirus
+sudo hardcode-tray --clear-cache
+sudo hardcode-tray --apply
+```
+
 More updated TUI tools
 ```bash
 yay -S mtr pydf multitail
