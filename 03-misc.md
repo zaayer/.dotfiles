@@ -69,7 +69,7 @@ systemctl --user enable psd.service --now
 
 General desktop (work in progress)
 ```bash
-yay -S eog evince file-roller gdm gnome-backgrounds gnome-calculator gnome-clocks gnome-characters gnome-control-center gnome-font-viewer gnome-keyring gnome-menus gnome-screenshot gnome-session gnome-settings-daemon gnome-shell mutter nautilus sushi tracker xdg-user-dirs-gtk gnome-logs gnome-tweaks alacarte gnome-shell-extensions gnome-shell-extension-dash-to-dock gnome-shell-extension-impatience-git gnome-shell-extension-no-topleft-hot-corner gnome-shell-extension-panel-osd dconf-editor chrome-gnome-shell gnome-terminal ffmpegthumbnailer gst-libav
+yay -S gthumb libraw libchamplain evince file-roller gdm gnome-backgrounds gnome-calculator gnome-clocks gnome-characters gnome-control-center gnome-font-viewer gnome-keyring gnome-menus gnome-screenshot gnome-session gnome-settings-daemon gnome-shell mutter nautilus sushi tracker xdg-user-dirs-gtk gnome-logs gnome-tweaks alacarte gnome-shell-extensions gnome-shell-extension-dash-to-dock gnome-shell-extension-impatience-git gnome-shell-extension-no-topleft-hot-corner gnome-shell-extension-panel-osd dconf-editor chrome-gnome-shell gnome-terminal ffmpegthumbnailer gst-libav
 ```
 
 More updated TUI tools
