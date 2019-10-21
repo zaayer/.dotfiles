@@ -78,6 +78,24 @@ Other extensions from extensions.gnome.org
     - Status Area Horizontal Spacing
     - KStatusNotifierItem/AppIndicator Support
 
+Themes
+```bash
+yay -S materia-gtk-theme papirus-icon-theme
+```
+
+Create gnome-shell theme for Materia
+```bash
+sudo cp /usr/share/gnome-shell/gnome-shell-theme.gresource /usr/share/gnome-shell/gnome-shell-theme.gresource.original
+cd /usr/share/themes/Materia/gnome-shell
+sudo glib-compile-resources --target=/usr/share/gnome-shell/gnome-shell-theme.gresource gnome-shell-theme.gresource.xml
+```
+
+Enhancements to Materia
+```bash
+subl /usr/share/themes/Materia/gnome-shell/gnome-shell.css
+```
+- Then edit font-family under stage to move Sans-Serif to the front.
+
 Enhancements to Papirus
 ```bash
 yay -S papirus-folders-git hardcode-tray
