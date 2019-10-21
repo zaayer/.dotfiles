@@ -21,3 +21,5 @@ ttf-merriweather-sans
 ttf-mplus
 otf-overpass
 ttf-clear-sans
+otf-fifthleg
+ttf-material-design-icons

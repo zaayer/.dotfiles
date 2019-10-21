@@ -77,6 +77,8 @@ Other extensions from extensions.gnome.org
     - No Symbolic Icons
     - Status Area Horizontal Spacing
     - KStatusNotifierItem/AppIndicator Support
+    - Panel OSD
+    - Frippery Move Clock
 
 Themes
 ```bash
@@ -95,6 +97,7 @@ Enhancements to Materia
 subl /usr/share/themes/Materia/gnome-shell/gnome-shell.css
 ```
 - Then edit font-family under stage to move Sans-Serif to the front.
+- May also edit font-size (I used 10)
 
 Enhancements to Papirus
 ```bash

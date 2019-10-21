@@ -121,8 +121,8 @@ let g:lightline = {
 
 set background=dark
 
-"colorscheme monokai_pro
-"let g:lightline.colorscheme = 'monokai_pro'
+colorscheme monokai_pro
+let g:lightline.colorscheme = 'PaperColor'
 
 " GRUVBOX
 "let g:gruvbox_italic = 1
@@ -176,9 +176,9 @@ set background=dark
 
 " BASE 16 VIM
 " Enable italic comments in base16 themes
-let base16colorspace=256
-colorscheme base16-eighties
-let g:lightline.colorscheme = 'Tomorrow_Night_Eighties'
+"let base16colorspace=256
+"colorscheme base16-eighties
+"let g:lightline.colorscheme = 'Tomorrow_Night_Eighties'
 
 " Enable syntax highlighting
 syntax enable
