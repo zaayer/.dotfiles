@@ -85,19 +85,19 @@ Themes
 yay -S materia-gtk-theme papirus-icon-theme
 ```
 
-Create gnome-shell theme for Materia
-```bash
-sudo cp /usr/share/gnome-shell/gnome-shell-theme.gresource /usr/share/gnome-shell/gnome-shell-theme.gresource.original
-cd /usr/share/themes/Materia/gnome-shell
-sudo glib-compile-resources --target=/usr/share/gnome-shell/gnome-shell-theme.gresource gnome-shell-theme.gresource.xml
-```
-
 Enhancements to Materia
 ```bash
 subl /usr/share/themes/Materia/gnome-shell/gnome-shell.css
 ```
 - Then edit font-family under stage to move Sans-Serif to the front.
 - May also edit font-size (I used 10)
+
+Create gnome-shell theme for Materia
+```bash
+sudo cp /usr/share/gnome-shell/gnome-shell-theme.gresource /usr/share/gnome-shell/gnome-shell-theme.gresource.original
+cd /usr/share/themes/Materia/gnome-shell
+sudo glib-compile-resources --target=/usr/share/gnome-shell/gnome-shell-theme.gresource gnome-shell-theme.gresource.xml
+```
 
 Enhancements to Papirus
 ```bash

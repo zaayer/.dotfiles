@@ -9,7 +9,7 @@
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"fold_buttons": false,
-	"font_face": "Cascadia Code",
+	"font_face": "SF Mono",
 	"font_options":
 	[
 		"dlig",
