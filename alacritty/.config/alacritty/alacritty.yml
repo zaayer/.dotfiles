@@ -101,14 +101,14 @@ tabspaces: 8
 # Font configuration (changes require restart)
 font:
   # Normal (roman) font face
-  normal:
+  #normal:
     # Font family
     #
     # Default:
     #   - (macOS) Menlo
     #   - (Linux) monospace
     #   - (Windows) Consolas
-    family: Cascadia Code
+    #family: Cascadia Code
 
     # The `style` can be specified to pick a specific face.
     #style: Regular
@@ -136,7 +136,7 @@ font:
     #style: Medium Italic
 
   # Point size
-  size: 9
+  size: 10
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -310,34 +310,34 @@ draw_bold_text_with_bright_colors: true
 #     cyan:    '0x5fb3b3'
 #     white:   '0xd8dee9'
 
-# # Colors (Seoul256)
-# colors:
-#   # Default colors
-#   primary:
-#     background: '0x262626'
-#     foreground: '0xd0d0d0'
+# Colors (Seoul256)
+colors:
+  # Default colors
+  primary:
+    background: '0x262626'
+    foreground: '0xd0d0d0'
 
-#   # Normal colors
-#   normal:
-#     black:   '0x4e4e4e'
-#     red:     '0xd68787'
-#     green:   '0x5f865f'
-#     yellow:  '0xd8af5f'
-#     blue:    '0x85add4'
-#     magenta: '0xd7afaf'
-#     cyan:    '0x87afaf'
-#     white:   '0xd0d0d0'
+  # Normal colors
+  normal:
+    black:   '0x4e4e4e'
+    red:     '0xd68787'
+    green:   '0x5f865f'
+    yellow:  '0xd8af5f'
+    blue:    '0x85add4'
+    magenta: '0xd7afaf'
+    cyan:    '0x87afaf'
+    white:   '0xd0d0d0'
 
-#   # Bright colors
-#   bright:
-#     black:   '0x626262'
-#     red:     '0xd75f87'
-#     green:   '0x87af87'
-#     yellow:  '0xffd787'
-#     blue:    '0xadd4fb'
-#     magenta: '0xffafaf'
-#     cyan:    '0x87d7d7'
-#     white:   '0xe4e4e4'
+  # Bright colors
+  bright:
+    black:   '0x626262'
+    red:     '0xd75f87'
+    green:   '0x87af87'
+    yellow:  '0xffd787'
+    blue:    '0xadd4fb'
+    magenta: '0xffafaf'
+    cyan:    '0x87d7d7'
+    white:   '0xe4e4e4'
 
 # # Colors (One Dark)
 # colors:
@@ -368,83 +368,83 @@ draw_bold_text_with_bright_colors: true
 #     cyan:    '0x56b6c2'
 #     white:   '0xffffff'
 
-# Colors (Monokai Pro)
-colors:
-  # Default colors
-  primary:
-    background: '0x2d2a2e'
-    foreground: '0xfcfcfa'
+# # Colors (Monokai Pro)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0x2d2a2e'
+#     foreground: '0xfcfcfa'
 
-    # Bright and dim foreground colors
-    #
-    # The dimmed foreground color is calculated automatically if it is not present.
-    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
-    # is `false`, the normal foreground color will be used.
-    #dim_foreground: '0x9a9a9a'
-    #bright_foreground: '0xffffff'
+#     # Bright and dim foreground colors
+#     #
+#     # The dimmed foreground color is calculated automatically if it is not present.
+#     # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
+#     # is `false`, the normal foreground color will be used.
+#     #dim_foreground: '0x9a9a9a'
+#     #bright_foreground: '0xffffff'
 
-  # Cursor colors
-  #
-  # Colors which should be used to draw the terminal cursor. If these are unset,
-  # the cursor color will be the inverse of the cell color.
-  #cursor:
-  #  text: '0x000000'
-  #  cursor: '0xffffff'
+#   # Cursor colors
+#   #
+#   # Colors which should be used to draw the terminal cursor. If these are unset,
+#   # the cursor color will be the inverse of the cell color.
+#   #cursor:
+#   #  text: '0x000000'
+#   #  cursor: '0xffffff'
 
-  # Selection colors
-  #
-  # Colors which should be used to draw the selection area. If selection
-  # background is unset, selection color will be the inverse of the cell colors.
-  # If only text is unset the cell text color will remain the same.
-  #selection:
-  #  text: '0xeaeaea'
-  #  background: '0x404040'
+#   # Selection colors
+#   #
+#   # Colors which should be used to draw the selection area. If selection
+#   # background is unset, selection color will be the inverse of the cell colors.
+#   # If only text is unset the cell text color will remain the same.
+#   #selection:
+#   #  text: '0xeaeaea'
+#   #  background: '0x404040'
 
-  # Normal colors
-  normal:
-    black:   '0x403e41' # 2d2a2e is original - i'm going to lighten it 20%
-    red:     '0xff6188'
-    green:   '0xa9dc76'
-    yellow:  '0xffd866'
-    blue:    '0x4fb2e3' # blue complement of monokai pro orange fc9867 - 10% darker
-    magenta: '0xab9df2'
-    cyan:    '0x78dce8'
-    white:   '0xfcfcfa'
+#   # Normal colors
+#   normal:
+#     black:   '0x403e41' # 2d2a2e is original - i'm going to lighten it 20%
+#     red:     '0xff6188'
+#     green:   '0xa9dc76'
+#     yellow:  '0xffd866'
+#     blue:    '0x4fb2e3' # blue complement of monokai pro orange fc9867 - 10% darker
+#     magenta: '0xab9df2'
+#     cyan:    '0x78dce8'
+#     white:   '0xfcfcfa'
 
-  # Bright colors
-  bright:
-    black:   '0x727072'
-    red:     '0xff6188'
-    green:   '0xa9dc76'
-    yellow:  '0xffd866'
-    blue:    '0x4fb2e3'
-    magenta: '0xab9df2'
-    cyan:    '0x78dce8'
-    white:   '0xfcfcfa'
+#   # Bright colors
+#   bright:
+#     black:   '0x727072'
+#     red:     '0xff6188'
+#     green:   '0xa9dc76'
+#     yellow:  '0xffd866'
+#     blue:    '0x4fb2e3'
+#     magenta: '0xab9df2'
+#     cyan:    '0x78dce8'
+#     white:   '0xfcfcfa'
 
-  # Dim colors
-  #
-  # If the dim colors are not set, they will be calculated automatically based
-  # on the `normal` colors.
-  # dim:
-  #  black:   '0x000000'
-  #  red:     '0x8c3336'
-  #  green:   '0x7a8530'
-  #  yellow:  '0x97822e'
-  #  blue:    '0x506d8f'
-  #  magenta: '0x80638e'
-  #  cyan:    '0x497e7a'
-  #  white:   '0x9a9a9a'
+#   # Dim colors
+#   #
+#   # If the dim colors are not set, they will be calculated automatically based
+#   # on the `normal` colors.
+#   # dim:
+#   #  black:   '0x000000'
+#   #  red:     '0x8c3336'
+#   #  green:   '0x7a8530'
+#   #  yellow:  '0x97822e'
+#   #  blue:    '0x506d8f'
+#   #  magenta: '0x80638e'
+#   #  cyan:    '0x497e7a'
+#   #  white:   '0x9a9a9a'
 
-  # Indexed Colors
-  #
-  # The indexed colors include all colors from 16 to 256.
-  # When these are not set, they're filled with sensible defaults.
-  #
-  # Example:
-  #   `- { index: 16, color: '0xff00ff' }`
-  #
-  indexed_colors: []
+#   # Indexed Colors
+#   #
+#   # The indexed colors include all colors from 16 to 256.
+#   # When these are not set, they're filled with sensible defaults.
+#   #
+#   # Example:
+#   #   `- { index: 16, color: '0xff00ff' }`
+#   #
+#   indexed_colors: []
 
 # Visual Bell
 #
