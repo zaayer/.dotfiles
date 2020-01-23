@@ -1,0 +1,504 @@
+Unowned Files:
+  /boot/EFI/
+  /boot/initramfs-linux-fallback.img
+  /boot/initramfs-linux.img
+  /boot/loader/
+  /boot/vmlinuz-linux
+  /etc/.pwd.lock
+  /etc/.updated
+  /etc/NetworkManager/conf.d/dhcp-client.conf
+  /etc/NetworkManager/conf.d/dns.conf
+  /etc/NetworkManager/system-connections/135W282FE-5G.nmconnection
+  /etc/NetworkManager/system-connections/KR-double.nmconnection
+  /etc/NetworkManager/system-connections/Keith-5G.nmconnection
+  /etc/NetworkManager/system-connections/Wired connection 1.nmconnection
+  /etc/NetworkManager/system-connections/zaayer.nmconnection
+  /etc/NetworkManager/system-connections/zaayerDC.nmconnection
+  /etc/adjtime
+  /etc/ca-certificates/extracted/ca-bundle.trust.crt
+  /etc/ca-certificates/extracted/cadir/
+  /etc/ca-certificates/extracted/edk2-cacerts.bin
+  /etc/ca-certificates/extracted/email-ca-bundle.pem
+  /etc/ca-certificates/extracted/objsign-ca-bundle.pem
+  /etc/ca-certificates/extracted/tls-ca-bundle.pem
+  /etc/fonts/conf.d/10-sub-pixel-rgb.conf
+  /etc/fonts/conf.d/11-lcdfilter-default.conf
+  /etc/group-
+  /etc/gshadow-
+  /etc/hostname
+  /etc/ld.so.cache
+  /etc/locale.conf
+  /etc/localtime
+  /etc/lvm/archive/vg0_00000-1546901448.vg
+  /etc/lvm/backup/vg0
+  /etc/lvm/cache/
+  /etc/machine-id
+  /etc/mkinitcpio.d/linux.preset
+  /etc/modprobe.d/amdgpu.conf
+  /etc/modprobe.d/blacklist.conf
+  /etc/modprobe.d/i915.conf
+  /etc/modprobe.d/snd-hda-intel.conf
+  /etc/os-release
+  /etc/pacman.d/gnupg/
+  /etc/pacman.d/mirrorlist.backup
+  /etc/pacman.d/mirrorlist.pacnew
+  /etc/passwd-
+  /etc/passwd.OLD
+  /etc/profile.d/vaapi.sh
+  /etc/resolv.conf.bak
+  /etc/shadow-
+  /etc/ssh/ssh_host_dsa_key
+  /etc/ssh/ssh_host_dsa_key.pub
+  /etc/ssh/ssh_host_ecdsa_key
+  /etc/ssh/ssh_host_ecdsa_key.pub
+  /etc/ssh/ssh_host_ed25519_key
+  /etc/ssh/ssh_host_ed25519_key.pub
+  /etc/ssh/ssh_host_rsa_key
+  /etc/ssh/ssh_host_rsa_key.pub
+  /etc/sudoers.d/psd
+  /etc/sysctl.d/99-sysctl.conf
+  /etc/systemd/journald.conf.d/
+  /etc/systemd/system/bluetooth.target.wants/
+  /etc/systemd/system/dbus-fi.w1.wpa_supplicant1.service
+  /etc/systemd/system/dbus-org.bluez.service
+  /etc/systemd/system/dbus-org.freedesktop.nm-dispatcher.service
+  /etc/systemd/system/dbus-org.freedesktop.timesync1.service
+  /etc/systemd/system/display-manager.service
+  /etc/systemd/system/getty.target.wants/
+  /etc/systemd/system/lvm2-lvmetad.service.d/
+  /etc/systemd/system/multi-user.target.wants/
+  /etc/systemd/system/network-online.target.wants/
+  /etc/systemd/system/restic-backup.service
+  /etc/systemd/system/restic-backup.timer
+  /etc/systemd/system/sysinit.target.wants/
+  /etc/systemd/system/timers.target.wants/
+  /etc/systemd/user/default.target.wants/
+  /etc/systemd/user/sockets.target.wants/
+  /etc/udev/hwdb.bin
+  /etc/udev/rules.d/98-kiibohd.rules
+  /etc/vconsole.conf
+  /etc/xml/
+  /lost+found/
+  /opt/containerd/
+  /usr/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache
+  /usr/lib/gio/modules/giomodule.cache
+  /usr/lib/gtk-2.0/2.10.0/immodules.cache
+  /usr/lib/gtk-3.0/3.0.0/immodules.cache
+  /usr/lib/locale/locale-archive
+  /usr/lib/python3.7/site-packages/HardcodeTray/__pycache__/
+  /usr/lib/python3.7/site-packages/HardcodeTray/modules/__pycache__/
+  /usr/lib/python3.7/site-packages/HardcodeTray/modules/applications/__pycache__/
+  /usr/lib/python3.7/site-packages/HardcodeTray/modules/applications/helpers/__pycache__/
+  /usr/lib/python3.7/site-packages/HardcodeTray/modules/config/__pycache__/
+  /usr/lib/python3.7/site-packages/HardcodeTray/modules/svg/__pycache__/
+  /usr/lib/systemd/user/restic-backup.service
+  /usr/lib/systemd/user/restic-backup.timer
+  /usr/lib/udev/hwdb.bin
+  /usr/share/applications/mimeinfo.cache
+  /usr/share/fonts/100dpi/fonts.dir
+  /usr/share/fonts/75dpi/fonts.dir
+  /usr/share/fonts/OTF/fonts.dir
+  /usr/share/fonts/OTF/fonts.scale
+  /usr/share/fonts/TTF/Roboto/fonts.dir
+  /usr/share/fonts/TTF/Roboto/fonts.scale
+  /usr/share/fonts/TTF/fonts.dir
+  /usr/share/fonts/TTF/fonts.scale
+  /usr/share/fonts/adobe-source-code-pro/fonts.dir
+  /usr/share/fonts/adobe-source-code-pro/fonts.scale
+  /usr/share/fonts/adobe-source-sans-pro/fonts.dir
+  /usr/share/fonts/adobe-source-sans-pro/fonts.scale
+  /usr/share/fonts/adobe-source-serif-pro/fonts.dir
+  /usr/share/fonts/adobe-source-serif-pro/fonts.scale
+  /usr/share/fonts/caladea/fonts.dir
+  /usr/share/fonts/caladea/fonts.scale
+  /usr/share/fonts/cantarell/fonts.dir
+  /usr/share/fonts/cantarell/fonts.scale
+  /usr/share/fonts/carlito/fonts.dir
+  /usr/share/fonts/carlito/fonts.scale
+  /usr/share/fonts/croscore/fonts.dir
+  /usr/share/fonts/croscore/fonts.scale
+  /usr/share/fonts/gsfonts/fonts.dir
+  /usr/share/fonts/gsfonts/fonts.scale
+  /usr/share/fonts/liberation/fonts.dir
+  /usr/share/fonts/liberation/fonts.scale
+  /usr/share/fonts/misc/fonts.dir
+  /usr/share/fonts/ttf-iosevka-slab/fonts.dir
+  /usr/share/fonts/ttf-iosevka-slab/fonts.scale
+  /usr/share/fonts/ttf-iosevka/fonts.dir
+  /usr/share/fonts/ttf-iosevka/fonts.scale
+  /usr/share/fonts/ttf-roboto-slab/fonts.dir
+  /usr/share/fonts/ttf-roboto-slab/fonts.scale
+  /usr/share/fonts/ubuntu/fonts.dir
+  /usr/share/fonts/ubuntu/fonts.scale
+  /usr/share/glib-2.0/schemas/gschemas.compiled
+  /usr/share/gnome-shell/gnome-shell-theme.gresource.original
+  /usr/share/gnome-shell/gnome-shell-theme.gresource.plata
+  /usr/share/hwdata/pci.ids.old
+  /usr/share/icons/Adwaita/icon-theme.cache
+  /usr/share/icons/Boston-Icons/
+  /usr/share/icons/HighContrast/icon-theme.cache
+  /usr/share/icons/Numix-Circle-Light/icon-theme.cache
+  /usr/share/icons/Numix-Circle/icon-theme.cache
+  /usr/share/icons/Numix-Light/icon-theme.cache
+  /usr/share/icons/Numix/icon-theme.cache
+  /usr/share/icons/Oranchelo/
+  /usr/share/icons/Papirus-Dark/icon-theme.cache
+  /usr/share/icons/Papirus-Light/icon-theme.cache
+  /usr/share/icons/Papirus/icon-theme.cache
+  /usr/share/icons/Sea/icon-theme.cache
+  /usr/share/icons/deepin-dark/icon-theme.cache
+  /usr/share/icons/deepin/icon-theme.cache
+  /usr/share/icons/ePapirus/icon-theme.cache
+  /usr/share/icons/hicolor/48x48/apps/zenmap
+  /usr/share/icons/hicolor/icon-theme.cache
+  /usr/share/info/dir
+  /usr/share/themes/Plano/
+  /usr/share/themes/Xenlism-Minimalism/
+  /var/.updated
+  /var/db/sudo/lectured/zaayer
+  /var/lib/AccountsService/icons/zaayer
+  /var/lib/AccountsService/users/gdm
+  /var/lib/AccountsService/users/zaayer
+  /var/lib/NetworkManager/NetworkManager-intern.conf
+  /var/lib/NetworkManager/NetworkManager.state
+  /var/lib/NetworkManager/dhclient-043e8739-490f-42c2-b79f-3f013b30c4f8-wlp6s0.lease
+  /var/lib/NetworkManager/dhclient-324bdd28-8423-480f-a1da-7c3ae3db83a5-wlp6s0.lease
+  /var/lib/NetworkManager/dhclient-3f9f983d-bb5a-4704-9539-fa0cc7fb0ffb-wlp6s0.lease
+  /var/lib/NetworkManager/dhclient-6c7df59a-852e-4412-ba89-e540f6d7d943-wlp6s0.lease
+  /var/lib/NetworkManager/dhclient-6d1a60a7-7fe1-3011-94b6-324c92f35723-enp2s0u1c4i2.lease
+  /var/lib/NetworkManager/dhclient-7a0d26ca-cdbd-4c14-8578-2875dfab4c02-wlp6s0.lease
+  /var/lib/NetworkManager/dhclient-83b9eaac-d7fe-3fa4-a49b-b8d5192a2289-eno1.lease
+  /var/lib/NetworkManager/dhclient-bf6ec50c-149e-4086-8585-f35a0eb04196-wlp6s0.lease
+  /var/lib/NetworkManager/dhclient-wlp6s0.conf
+  /var/lib/NetworkManager/dhclient6-043e8739-490f-42c2-b79f-3f013b30c4f8-wlp6s0.lease
+  /var/lib/NetworkManager/dhclient6-6c7df59a-852e-4412-ba89-e540f6d7d943-wlp6s0.lease
+  /var/lib/NetworkManager/dhclient6-6d1a60a7-7fe1-3011-94b6-324c92f35723-enp2s0u1c4i2.lease
+  /var/lib/NetworkManager/dhclient6-7a0d26ca-cdbd-4c14-8578-2875dfab4c02-wlp6s0.lease
+  /var/lib/NetworkManager/dhclient6-bf6ec50c-149e-4086-8585-f35a0eb04196-wlp6s0.lease
+  /var/lib/NetworkManager/secret_key
+  /var/lib/NetworkManager/seen-bssids
+  /var/lib/NetworkManager/timestamps
+  /var/lib/bluetooth/
+  /var/lib/boltd/bootacl/
+  /var/lib/boltd/devices/
+  /var/lib/boltd/domains/
+  /var/lib/boltd/times/
+  /var/lib/colord/
+  /var/lib/dbus/machine-id
+  /var/lib/dhclient/dhclient.leases
+  /var/lib/dhcpcd/
+  /var/lib/docker/
+  /var/lib/ead/
+  /var/lib/gdm/.ICEauthority
+  /var/lib/gdm/.cache/
+  /var/lib/gdm/.config/
+  /var/lib/gdm/.esd_auth
+  /var/lib/gdm/.local/share/gnome-shell/
+  /var/lib/gdm/.local/share/icc/
+  /var/lib/gdm/.local/share/sounds/
+  /var/lib/gdm/.local/share/xorg/
+  /var/lib/gdm/Desktop/
+  /var/lib/gdm/Documents/
+  /var/lib/gdm/Downloads/
+  /var/lib/gdm/Music/
+  /var/lib/gdm/Pictures/
+  /var/lib/gdm/Public/
+  /var/lib/gdm/Templates/
+  /var/lib/gdm/Videos/
+  /var/lib/geoclue/
+  /var/lib/iwd/
+  /var/lib/lockdown/
+  /var/lib/logrotate.status
+  /var/lib/machines/
+  /var/lib/pacman/local/
+  /var/lib/pacman/sync/
+  /var/lib/papirus-folders/
+  /var/lib/plymouth/
+  /var/lib/portables/
+  /var/lib/private/
+  /var/lib/systemd/catalog/
+  /var/lib/systemd/coredump/
+  /var/lib/systemd/linger/
+  /var/lib/systemd/random-seed
+  /var/lib/systemd/rfkill/
+  /var/lib/systemd/timers/
+  /var/lib/systemd/timesync/
+  /var/lib/upower/history-charge-Wireless_Mouse_MX_Master_3-4082-e0-03-76-47.dat
+  /var/lib/upower/history-rate-Wireless_Mouse_MX_Master_3-4082-e0-03-76-47.dat
+  /var/lib/upower/history-time-empty-Wireless_Mouse_MX_Master_3-4082-e0-03-76-47.dat
+  /var/lib/upower/history-time-full-Wireless_Mouse_MX_Master_3-4082-e0-03-76-47.dat
+  /var/lost+found/
+Unneeded Packages Installed Explicitly:
+  adobe-source-sans-pro-fonts         	  3.56 M
+  adobe-source-serif-pro-fonts        	  3.04 M
+  alacarte                            	  1.58 M
+  alacritty                           	  6.06 M
+  alacritty-terminfo                  	  6.84 K
+  arc-gtk-theme                       	  7.41 M
+  autoconf                            	  2.00 M (base-devel)
+  automake                            	  1.56 M (base-devel)
+  bash-completion                     	836.42 K
+  bat                                 	  4.65 M
+  bison                               	  2.07 M (base-devel)
+  cabextract                          	 96.00 K
+  capitaine-cursors                   	  6.33 M
+  catimg                              	 82.00 K
+  celluloid-git                       	669.00 K
+  chafa                               	460.53 K
+  chrome-gnome-shell-git              	 31.00 K
+  chromium                            	186.77 M
+  chromium-widevine                   	  8.92 M
+  cmake                               	 37.44 M
+  cpio                                	938.48 K
+  dashbinsh                           	 21.00 K
+  dconf-editor                        	  2.61 M (gnome-extra)
+  deepin-icon-theme                   	 42.33 M
+  dfu-util                            	 95.00 K
+  dhclient                            	  2.81 M
+  dnsmasq                             	737.00 K
+  docker-compose                      	  6.21 M
+  docker-credential-pass              	  1.96 M
+  dtrx                                	 78.00 K
+  efibootmgr                          	400.64 K
+  exfat-utils                         	778.00 K
+  expac                               	 35.09 K
+  fbset                               	 95.00 K
+  fd                                  	  2.71 M
+  feh                                 	438.64 K
+  fff                                 	 44.00 K
+  ffmpegthumbnailer                   	294.00 K
+  file-roller                         	  4.27 M (gnome)
+  fish                                	 11.57 M
+  flake8                              	  1.59 M
+  flex                                	971.00 K (base-devel)
+  fortune-mod                         	  5.95 M
+  fzf                                 	  3.70 M
+  gdm                                 	  4.18 M (gnome)
+  gettext                             	  7.29 M (base-devel)
+  gnome-backgrounds                   	 33.49 M (gnome)
+  gnome-calculator                    	  7.03 M (gnome)
+  gnome-characters                    	793.00 K (gnome)
+  gnome-clocks                        	  1.29 M (gnome)
+  gnome-control-center                	 68.07 M (gnome)
+  gnome-font-viewer                   	843.00 K (gnome)
+  gnome-keyring                       	  4.26 M (gnome)
+  gnome-logs                          	  1.36 M (gnome)
+  gnome-screenshot                    	891.00 K (gnome)
+  gnome-shell-extension-arch-update   	150.35 K
+  gnome-shell-extension-dash-to-dock  	821.25 K
+  gnome-shell-extension-impatience-git	  4.57 K
+  gnome-shell-extensions              	877.72 K (gnome)
+  gnome-tweaks                        	  1.17 M (gnome-extra)
+  go                                  	478.68 M
+  gopass                              	 20.30 M
+  gotop                               	  2.95 M
+  gst-libav                           	230.26 K
+  gst-plugins-ugly                    	  1.06 M
+  gstreamer-vaapi                     	884.95 K
+  gthumb                              	 14.96 M
+  gwaterfall                          	 71.00 K
+  hardcode-tray                       	 21.82 M
+  htop                                	199.27 K
+  inetutils                           	  1.11 M
+  intel-ucode                         	  2.98 M
+  iputils                             	284.06 K
+  jfsutils                            	  1.02 M
+  jp2a                                	 31.00 K
+  lesspipe                            	272.00 K
+  lhasa                               	113.00 K
+  libchamplain                        	  2.12 M
+  libheif                             	726.66 K
+  libldac                             	133.00 K
+  libraw                              	  2.10 M
+  libu2f-host                         	232.48 K
+  libva-mesa-driver                   	  8.69 M
+  libva-utils                         	  2.53 M
+  libva-vdpau-driver-chromium         	 97.78 K
+  libvdpau-va-gl                      	338.00 K
+  licenses                            	415.86 K
+  linux                               	 73.90 M
+  linux-firmware                      	518.18 M
+  liri-wallpapers                     	  7.87 M (liri)
+  logrotate                           	103.07 K
+  lostfiles                           	  7.00 K
+  make                                	 45.36 M (base-devel)
+  man-pages                           	  5.56 M
+  materia-gtk-theme                   	  5.08 M
+  mesa-vdpau                          	  8.99 M
+  mtr                                 	156.00 K
+  multitail                           	345.13 K
+  mypy                                	 13.65 M
+  nano                                	  2.16 M
+  nautilus                            	 32.77 M (gnome)
+  ncdu                                	 83.00 K
+  neofetch                            	290.00 K
+  neovim-qt                           	  3.40 M
+  networkmanager                      	 27.63 M (gnome)
+  numix-circle-icon-theme-git         	 35.79 M
+  numix-gtk-theme                     	  2.04 M
+  opencl-headers                      	777.00 K
+  opencl-mesa                         	204.85 M
+  openmp                              	  1.04 M
+  otf-fifthleg                        	205.00 K
+  otf-overpass                        	  2.66 M
+  p7zip                               	  6.26 M
+  pacgraph                            	 47.00 K
+  pacutils                            	459.01 K
+  papirus-folders-git                 	 15.00 K
+  pass-otp                            	  6.04 M
+  patch                               	197.75 K (base-devel)
+  pkgconf                             	156.03 K (base-devel)
+  plata-theme                         	 23.44 M
+  profile-cleaner                     	  3.36 M
+  profile-sync-daemon                 	 40.26 K
+  pydf                                	 26.00 K
+  pyenv                               	  2.20 M
+  pygmentize                          	  7.36 M
+  pypy3                               	 99.09 M
+  python-black                        	  3.15 M
+  python-brotlipy                     	885.67 K
+  python-jedi                         	  4.74 M
+  python-pip                          	  3.03 M
+  python-poetry                       	  4.80 M
+  python-pylint                       	  4.89 M
+  python-pynvim                       	358.44 K
+  python-pyopenssl                    	542.83 K
+  python-pysocks                      	 97.73 K
+  qt5-wayland                         	 28.83 M (qt qt5)
+  raw-thumbnailer                     	559.00 K
+  reiserfsprogs                       	595.44 K
+  restic                              	 22.82 M
+  ripgrep                             	  4.59 M
+  rustup                              	  6.85 M
+  s-nail                              	986.00 K
+  stow                                	929.00 K
+  sublime-merge                       	 16.56 M
+  sublime-text                        	 33.26 M
+  sushi                               	  1.17 M (gnome)
+  systemd-boot-pacman-hook            	 21.00 K
+  systemd-sysvcompat                  	  4.50 K
+  telegram-desktop                    	 43.36 M
+  terminus-font                       	  1.04 M
+  time                                	 56.00 K
+  tmux                                	  1.85 M
+  ttf-anka-coder                      	299.00 K
+  ttf-caladea                         	237.00 K
+  ttf-carlito                         	  2.64 M
+  ttf-croscore                        	  5.75 M
+  ttf-fira-code                       	  1.39 M
+  ttf-fira-sans                       	 43.42 M
+  ttf-go-mono-git                     	697.00 K
+  ttf-go-sans-git                     	  1.13 M
+  ttf-hack                            	  1.21 M
+  ttf-ibm-plex                        	 16.23 M
+  ttf-inconsolata                     	207.00 K
+  ttf-input                           	 21.36 M
+  ttf-iosevka                         	 14.08 M
+  ttf-iosevka-slab                    	 15.01 M
+  ttf-material-design-icons           	126.00 K
+  ttf-merriweather                    	  2.50 M
+  ttf-merriweather-sans               	484.00 K
+  ttf-mplus                           	 70.43 M
+  ttf-opensans                        	  2.74 M
+  ttf-roboto-fontconfig               	  2.18 M
+  ttf-roboto-mono                     	  1.14 M
+  ttf-roboto-slab                     	700.58 K
+  ttf-ubuntu-font-family              	  3.95 M
+  tumbler                             	826.32 K (xfce4)
+  ufw                                 	792.38 K
+  unrar                               	304.91 K
+  unshield                            	117.00 K
+  usbutils                            	289.40 K
+  vdpauinfo                           	 32.17 K
+  vi                                  	307.26 K
+  vulkan-intel                        	  7.22 M
+  vulkan-mesa-layer                   	629.67 K
+  vulkan-radeon                       	  6.08 M
+  w3m                                 	  2.02 M
+  wget                                	  2.88 M
+  xdg-user-dirs-gtk                   	345.00 K (gnome)
+  xdotool                             	175.00 K
+  xf86-video-amdgpu                   	170.00 K (xorg-drivers)
+  xf86-video-intel                    	  2.29 M (xorg-drivers)
+  xf86-video-vesa                     	 74.00 K (xorg-drivers xorg)
+  xorg-docs                           	840.00 K (xorg)
+  xorg-fonts-100dpi                   	 12.27 M (xorg)
+  xorg-fonts-75dpi                    	 10.67 M (xorg)
+  xorg-iceauth                        	 70.00 K (xorg-apps xorg)
+  xorg-luit                           	 53.00 K (xorg xorg-apps)
+  xorg-server-devel                   	  1.33 M (xorg)
+  xorg-server-xephyr                  	  2.11 M (xorg)
+  xorg-server-xnest                   	  1.33 M (xorg)
+  xorg-server-xvfb                    	  1.78 M (xorg)
+  xorg-sessreg                        	 50.00 K (xorg-apps xorg)
+  xorg-smproxy                        	 25.00 K (xorg-apps xorg)
+  xorg-x11perf                        	279.00 K (xorg-apps xorg)
+  xorg-xbacklight                     	 49.00 K (xorg-apps xorg)
+  xorg-xcmsdb                         	 35.00 K (xorg-apps xorg)
+  xorg-xcursorgen                     	 53.00 K (xorg-apps xorg)
+  xorg-xdpyinfo                       	 33.04 K (xorg-apps xorg)
+  xorg-xdriinfo                       	 45.00 K (xorg-apps xorg)
+  xorg-xev                            	 65.00 K (xorg-apps xorg)
+  xorg-xgamma                         	 15.00 K (xorg-apps xorg)
+  xorg-xinput                         	 96.00 K (xorg-apps xorg)
+  xorg-xkbevd                         	 38.00 K (xorg-apps xorg)
+  xorg-xkbutils                       	 55.00 K (xorg-apps xorg)
+  xorg-xkill                          	 50.00 K (xorg-apps xorg)
+  xorg-xlsatoms                       	 49.00 K (xorg-apps xorg)
+  xorg-xlsclients                     	 51.00 K (xorg-apps xorg)
+  xorg-xmodmap                        	 78.00 K (xorg-apps xorg)
+  xorg-xpr                            	 95.00 K (xorg-apps xorg)
+  xorg-xrefresh                       	 47.00 K (xorg-apps xorg)
+  xorg-xsetroot                       	 55.00 K (xorg-apps xorg)
+  xorg-xvinfo                         	 52.00 K (xorg-apps xorg)
+  xorg-xwd                            	 68.00 K (xorg-apps xorg)
+  xorg-xwininfo                       	 85.00 K (xorg-apps xorg)
+  xorg-xwud                           	 63.00 K (xorg-apps xorg)
+  yay                                 	  6.32 M
+  youtube-dl                          	 12.53 M
+  zuki-themes                         	  1.71 M
+Unneeded Packages Installed As Dependencies:
+  inkscape   	211.86 M
+  python-lxml	  4.98 M
+Installed Packages Not In A Repository:
+  celluloid-git                       	669.00 K
+  chrome-gnome-shell-git              	 31.00 K
+  chromium-widevine                   	  8.92 M
+  dashbinsh                           	 21.00 K
+  docker-credential-pass              	  1.96 M
+  dtrx                                	 78.00 K
+  gnome-shell-extension-arch-update   	150.35 K
+  gnome-shell-extension-dash-to-dock  	821.25 K
+  gnome-shell-extension-impatience-git	  4.57 K
+  gotop                               	  2.95 M
+  hardcode-tray                       	 21.82 M
+  libldac                             	133.00 K
+  libva-vdpau-driver-chromium         	 97.78 K
+  liri-wallpapers                     	  7.87 M (liri)
+  numix-circle-icon-theme-git         	 35.79 M
+  numix-gtk-theme                     	  2.04 M
+  numix-icon-theme-git                	 23.73 M
+  otf-fifthleg                        	205.00 K
+  papirus-folders-git                 	 15.00 K
+  plata-theme                         	 23.44 M
+  profile-cleaner                     	  3.36 M
+  profile-sync-daemon                 	 40.26 K
+  pulseaudio-modules-bt-git           	229.30 K
+  systemd-boot-pacman-hook            	 21.00 K
+  ttf-anka-coder                      	299.00 K
+  ttf-go-mono-git                     	697.00 K
+  ttf-go-sans-git                     	  1.13 M
+  ttf-input                           	 21.36 M
+  ttf-iosevka                         	 14.08 M
+  ttf-iosevka-slab                    	 15.01 M
+  ttf-material-design-icons           	126.00 K
+  ttf-merriweather                    	  2.50 M
+  ttf-merriweather-sans               	484.00 K
+  ttf-mplus                           	 70.43 M
+  ttf-roboto-fontconfig               	  2.18 M
+  ttf-roboto-slab                     	700.58 K
+  yay                                 	  6.32 M
+  zuki-themes                         	  1.71 M
+Missing Group Packages:
+Package Cache Size:
+  /var/cache/pacman/pkg/ 1.15 G (0.00 B not installed)

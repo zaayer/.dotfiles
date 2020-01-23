@@ -4,27 +4,29 @@
 	"black_on_save": true,
 	"caret_extra_width": 3,
 	"caret_style": "phase",
-	"color_scheme": "Packages/DA UI/DA Dark.tmTheme",
+	"color_scheme": "Packages/DA CS/Monokai Pro.tmTheme",
+	"draw_indent_guides": false,
 	"draw_white_space": "selection",
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"fold_buttons": false,
-	"font_face": "SF Mono",
+	"font_face": "Iosevka Medium",
 	"font_options":
 	[
-		"dlig",
-		"no_italic"
+		"dlig"
 	],
-	"font_size": 11,
+	"font_size": 11.5,
+	"gutter": true,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Rust",
 		"Vintage"
 	],
-	"line_padding_bottom": 2,
-	"line_padding_top": 2,
-	"margin": 0,
+	"line_numbers": true,
+	"line_padding_bottom": 0,
+	"line_padding_top": 0,
+	"margin": 10,
 	"match_selection": false,
 	"overlay_scroll_bars": "enabled",
 	"scroll_past_end": false,
